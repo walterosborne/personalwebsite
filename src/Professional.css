@@ -11,27 +11,24 @@
 }
 #gridcont{
     margin-left: 12vw;
-    border: 2px solid green;
 }
 #grid{
     display: flex;
     flex-wrap: wrap;
     height: 90vh;
     width: 50vw;
-    border: 2px solid red ;
     margin: auto;
 }
 .box{
     color:black;
     position: relative;
-    height: 30vh;
+    height: 35vh;
     margin: auto;
     display: flex;
     flex-direction: column;
     background-color: gainsboro;
     border-radius: 10px;
     width: 20vw;
-    border: 2px solid green;
     text-align: center;
     align-items: center;
     padding: 10px;

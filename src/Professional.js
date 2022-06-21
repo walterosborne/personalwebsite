@@ -23,13 +23,14 @@ function Professional() {
                         <p>View the full-stack app I published,<br />created with Java, XML, and Firebase</p>
                     </div>
                 </a>
-                <div className='box' id='websitebox'>
+
+                <a className='box' id='websitebox' href='https://github.com/walterosborne/personalwebsite' target='_blank'>
                     <img id='Rlogo' src={Rlogo} alt="React logo" />
                     <div className='Text'>
                         <h2>This Website</h2>
                         <p>walterosborne.net is a React project featuring HTML,CSS, and Javascript, and is continuing to evolve!</p>
                     </div>
-                </div>
+                </a>
                 <a className='box' id='writsampbox' href='https://docs.google.com/document/d/1nc1mmFRyLKMBNDA2M_maqeRya2hGOvKMIcPtAgSIC5k/edit?usp=sharing' target='_blank'>
                     <img id='grant' src={Grant} alt="Writing Sample" />
                     <div className='Text'>
