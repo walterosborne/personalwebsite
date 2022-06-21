@@ -22,7 +22,7 @@
 .box{
     color:black;
     position: relative;
-    height: 30vh;
+    height: 35vh;
     margin: auto;
     display: flex;
     flex-direction: column;
