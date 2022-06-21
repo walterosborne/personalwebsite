@@ -1,0 +1,26 @@
+#bg{
+    min-height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#info{
+    width: fit-content;
+    position: absolute;
+    top: 20vh;
+    right: 10vw;
+}
+
+@media (max-width: 1200px)  {
+
+  #bg{
+    left:auto;
+    min-width: 960px;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    z-index: -1;
+  }
+}

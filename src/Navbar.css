@@ -1,0 +1,45 @@
+#bar{
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 20px;
+}
+
+.item{
+    width: 9vw;
+    height: 9vw;
+    justify-content: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    background-color: white;
+}
+#about{
+    position: relative;
+}
+.picture{
+    margin: 0 auto;
+    height: fit-content;
+}
+#head,#home{
+    width:5vw
+}
+#board{
+    width:4vw
+}
+h2,h2:link{
+    font-size: 1.8vw;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    color: black;
+}
+
+.link{
+    border-radius: 50%;
+    width: fit-content;
+    text-decoration: none;
+}

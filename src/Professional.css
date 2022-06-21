@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+  }
+#bg{
+    min-height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#gridcont{
+    margin-left: 12vw;
+    border: 2px solid green;
+}
+#grid{
+    display: flex;
+    flex-wrap: wrap;
+    height: 90vh;
+    width: 50vw;
+    border: 2px solid red ;
+    margin: auto;
+}
+.box{
+    color:black;
+    position: relative;
+    height: 30vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: gainsboro;
+    border-radius: 10px;
+    width: 20vw;
+    border: 2px solid green;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+.box img{
+    height: auto;
+}
+#resume{
+    width: 9vw;
+}
+#kologo{
+    width:11vw;
+}
+
+#grant{
+    width: 12vw;
+}
+#Rlogo{
+    width: 15vw;
+}
+
+.box .Text {
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+}

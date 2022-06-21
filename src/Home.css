@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+}
+
+#bg{
+  min-height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+#welcome{
+  height: fit-content;
+  position: absolute;
+  width: fit-content;
+  left: 28vw;
+  top: 30vh;
+  align-items: center; 
+}
+#welcome h1{
+  width: fit-content;
+  height: fit-content;
+  font-size: 100px;
+  color: white;
+}
+#welcome h2{
+  position: relative;
+  height: fit-content;
+  font-size: 20px;
+  width: fit-content;
+  left: 50px;
+}
+@media (max-width: 800px)  {
+
+  #bg{
+    left:auto;
+    min-width: 960px;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    z-index: -1;
+  }
+  #welcome{
+    position: absolute;
+    margin: 0 auto;
+  }
+
+}
