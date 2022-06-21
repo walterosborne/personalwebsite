@@ -11,7 +11,6 @@
 }
 #gridcont{
     margin-left: 12vw;
-    border: 2px solid green;
 }
 #grid{
     display: flex;
