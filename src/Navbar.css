@@ -8,38 +8,31 @@
 }
 
 .item{
-    width: 9vw;
-    height: 9vw;
     justify-content: center;
     padding: 10px;
     display: flex;
     flex-direction: column;
     border-radius: 50%;
     background-color: white;
+    width: min(10vw,20vh);
+    height: min(10vw,20vh);
 }
 #about{
     position: relative;
 }
 .picture{
     margin: 0 auto;
-    height: fit-content;
+    max-height: 12vh;
+    max-width: 4vw;
 }
-#head,#home{
-    width:5vw
-}
-#board{
-    width:4vw
-}
-h2,h2:link{
-    font-size: 1.8vw;
+
+.link h2 {
+    font-size:min(3vw,6vh);
     text-align: center;
-    width: fit-content;
     margin: 0 auto;
     color: black;
 }
 
 .link{
-    border-radius: 50%;
-    width: fit-content;
     text-decoration: none;
 }

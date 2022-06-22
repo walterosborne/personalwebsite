@@ -10,7 +10,7 @@ function Professional() {
         <div id='gridcont'>
             <div id='grid'>
                 <a className='box' id='resumebox' href="https://docs.google.com/document/d/1m-P1HZxFnLftyyt0a02XfmXnd30fiCnkbcBrS8V6yyU/edit?usp=sharing" target='_blank'>
-                    <img id='resume' src={Resume} alt="Resume" height="33vh" />
+                    <img id='resume' src={Resume} alt="Resume" />
                     <div className='Text'>
                         <h2>Resume</h2>
                         <p>See a collection of my work<br />relavant to my career aspirations</p>
