@@ -64,4 +64,7 @@
     .box h2{
         max-height: 8vh;
     }
+    .box p{
+        width: 27vw;
+    }
 }
