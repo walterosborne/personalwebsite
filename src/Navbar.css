@@ -17,6 +17,10 @@
     width: min(10vw,20vh);
     height: min(10vw,20vh);
 }
+.link :hover{
+    background-color: gainsboro;
+    width: min(11vw,22vh);
+}
 #about{
     position: relative;
 }
@@ -24,6 +28,7 @@
     margin: 0 auto;
     max-height: 12vh;
     max-width: 4vw;
+    pointer-events:none;
 }
 
 .link h2 {
@@ -31,6 +36,7 @@
     text-align: center;
     margin: 0 auto;
     color: black;
+    pointer-events:none;
 }
 
 .link{
