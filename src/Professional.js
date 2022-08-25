@@ -20,7 +20,7 @@ function Professional() {
                     <img id='kologo' src={KO} alt="App" />
                     <div className='Text'>
                         <h2>Android App</h2>
-                        <p>View the full-stack app I published,<br />created with Java, XML, and Firebase</p>
+                        <p>View my published full-stack mobile app,<br />created with Java, XML, and Firebase</p>
                     </div>
                 </a>
 
