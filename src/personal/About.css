@@ -1,4 +1,4 @@
-#bg{
+#bg {
   width: 100%;
   position: fixed;
   top: 0;
@@ -6,22 +6,26 @@
   z-index: -1;
   object-fit: cover;
 }
-#infocontainer{
+
+#infocontainer {
   padding: 10px;
   border-radius: 10%;
-  top:15vh;
+  top: 15vh;
   position: absolute;
   right: 15vw;
   margin-left: 55vw;
   background-color: rgb(213, 213, 213);
+  font-family: "Times New Roman", Times, serif;
 }
-#info{
+
+
+#info {
   max-width: 88vw;
   position: relative;
 }
 
-@media (max-width: 800px)  {
-  #infocontainer{
+@media (max-width: 800px) {
+  #infocontainer {
     top: 25vh;
     margin-left: 20vw;
   }

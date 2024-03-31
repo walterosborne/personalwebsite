@@ -1,34 +1,40 @@
-*{
+* {
   margin: 0;
 }
 
-#bg{
+#bg {
   background-position: center right;
 }
-#welcome{
+
+#welcome {
   height: fit-content;
   position: absolute;
   width: fit-content;
   left: 28vw;
   top: 30vh;
-  align-items: center; 
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
 }
-#welcome h1{
+
+#welcome h1 {
   width: fit-content;
   height: fit-content;
   font-size: 10vw;
   color: white;
   margin: auto;
 }
-#welcome h2{
+
+#welcome h2 {
   position: relative;
   height: fit-content;
   font-size: 2.5vw;
   width: fit-content;
   left: 50px;
 }
-@media (max-width: 800px)  {
-  #welcome h2{
+
+@media (max-width: 800px) {
+  #welcome h2 {
     left: 0;
     margin: auto;
     font-size: 4vw;
