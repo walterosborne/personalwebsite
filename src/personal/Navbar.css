@@ -1,44 +1,49 @@
-#bar{
+#bar {
     position: absolute;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     margin-left: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
 }
 
-.item{
+.item {
     justify-content: center;
     padding: 10px;
     display: flex;
     flex-direction: column;
     border-radius: 50%;
     background-color: white;
-    width: min(10vw,20vh);
-    height: min(10vw,20vh);
+    width: min(10vw, 20vh);
+    height: min(10vw, 20vh);
 }
-.link :hover{
+
+.link :hover {
     background-color: gainsboro;
-    width: min(11vw,22vh);
+    width: min(11vw, 22vh);
 }
-#about{
+
+#about {
     position: relative;
 }
-.picture{
+
+.picture {
     margin: 0 auto;
     max-height: 12vh;
     max-width: 4vw;
-    pointer-events:none;
+    pointer-events: none;
 }
 
 .link h2 {
-    font-size:min(3vw,6vh);
+    font-size: min(3vw, 6vh);
     text-align: center;
     margin: 0 auto;
     color: black;
-    pointer-events:none;
+    pointer-events: none;
 }
 
-.link{
+.link {
     text-decoration: none;
 }

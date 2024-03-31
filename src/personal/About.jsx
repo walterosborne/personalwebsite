@@ -1,10 +1,11 @@
 import React from 'react'
 import Bg from './Me.jpeg'
 import './About.css'
+import Navbar from './Navbar.jsx';
 
 function About() {
     return (
-        <>
+        <><Navbar />
             <img id='bg' src={Bg} alt="Background" />
             <div id='infocontainer'>
                 <div id='info'>
