@@ -54,7 +54,7 @@ function FrenchToast() {
             width: '10vw', height: '10vh'
           }}> <img src={arrow} alt="" /></ParallaxLayer>
         <ParallaxLayer sticky={{ start: firsttexts, end: (firsttexts) }} style={{ ...momtxtstyle, height: '15vh', top: '8vh' }}>
-          <div className='metext'><p className='metextcontent'>Hey Jay! T and I are dropping by a new Mexican place tonight that Amie recommended - Mi Rancho. She said they have great burritos, which I know you love. Let me know if you can make it, no pressure. Love you.</p></div>
+          <div className='metext'><p className='metextcontent'>Hey Jay! T and I are dropping by a new Mexican place tonight that Ruth recommended - Mi Rancho. She said they have great burritos, which I know you love, even though they're not kosher. Let me know if you can make it, no pressure. Love you.</p></div>
         </ParallaxLayer>
 
         {/**Intro*/}
@@ -143,7 +143,7 @@ function FrenchToast() {
 
 
         <ParallaxLayer sticky={{ start: set - 1, end: set - 1 }} style={{ top: '2vh', height: '80vh', marginLeft: '15vw', width: '70vw', textAlign: 'center', justifyContent: 'center', display: 'flex' }}>
-          <div><h2>My eyes dart away from the crowd and through the stage below me. From the dirt and through the floorboards seep up live wriggling tree roots that somehow only I seem to see, and they slowly slide their way up my body until they become arms, arms which wrap around my chest to hug me. The roots continue past my neck and become fingers, running themselves soothingly through my scalp. They march forward to my forehead, pass themselves as lips, and plant themselves on my forehead. </h2>
+          <div><h2>My eyes dart away from the crowd and through the stage below me. From the dirt and through the floorboards seep up live wriggling tree roots that somehow only I seem to be able to see, and they slowly slide their way up my body until they become arms, arms which wrap around my chest to hug me. The roots continue past my neck and become fingers, running themselves soothingly through my scalp. They march forward to my forehead, pass themselves as lips, and plant themselves on my forehead. </h2>
             <br /><h2>I'm on a stage, on my birthday, alone. </h2>
             <br /><h2>But I know what I want.</h2>
             <br /><h2>I race outside, then reach for a smoke, but I can’t, because my throat feels glued shut, and the legions of tears racing each other down my face would extinguish it anyway. While walking wherever my feet will take me, I open my phone, then messages, then for the first time today, I scroll to the bottom of the chat and start typing.</h2></div>
