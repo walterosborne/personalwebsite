@@ -19,8 +19,8 @@ function FrenchToast() {
   const page1 = set + 6
   const page2 = page1 + 5
   const page3 = page2 + 6
-  const page4 = page3 + 5.25
-  const page5 = page4 + 3
+  const page4 = page3 + 6
+  const page5 = page4 + 2.5
   const pages = 2 + page5
 
   const alignCenter = {
@@ -120,16 +120,16 @@ function FrenchToast() {
           }} />
 
         <ParallaxLayer sticky={{ start: (jaybird - 2), end: jaybird - 1 }} style={{ ...momtxtstyle, height: '15vh', top: '8vh' }}>
-          <div className='metext'><p className='metextcontent'>Hey Jaybird. I was feeling down today, and was remembering how I used to be able to just get you a new comic book, and your reaction would fix the day right up for me. Crazy what makes us happy at different points in our life, no? </p></div>
+          <div className='metext'><p className='metextcontent'>Hey Jaybird. I was feeling down today, and was remembering how I used to be able to just get you a new comic book, and your elation would fix the day right up for me. Crazy what makes us happy at different points in our life, no? </p></div>
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: (jaybird - 1), end: jaybird - 1 }} style={{ ...momtxtstyle, height: '15vh', top: '24vh' }}>
-          <div className='metext'><p className='metextcontent'>Anywho, I sent a spiderman plushie to your apartment - it's small so you can hide when you have girls over. I wouldn’t want to embarrass you. Anyway, I love you small boy, I hope you’re keeping the big apple fun.</p></div>
+          <div className='metext'><p className='metextcontent'>Anywho, I sent a spiderman plushie to your apartment - it's small, so you can hide it when you have girls over. I wouldn’t want to embarrass you. Anyway, I love you small boy, I hope you’re keeping the big 🍎 fun.</p></div>
         </ParallaxLayer>
 
 
         <ParallaxLayer sticky={{ start: set - 2, end: set - 2 }} style={{ top: '2vh', height: '80vh', marginLeft: '15vw', width: '70vw', textAlign: 'center', justifyContent: 'center', display: 'flex' }}>
-          <div><h2>The set is going well. It really comes down to the opening joke - if that goes well, the audience is willing to ride out wherever you’re going the rest of the night. If my mom was a comedian, she would’ve cried every time she got on stage. Her eyes would be begging for the audience’s approval until they couldn’t plead anymore and released tears. I’m on such a roll, I stall so I can remember the new material I want to work on. As I think, a fan calls out.</h2>
+          <div><h2>The set is going well. It really comes down to the opening joke - if that goes well, the audience is willing to ride out wherever you’re going the rest of the night. If my mom was a comedian, she would’ve cried every time she got on stage. Her eyes would be begging for the audience’s approval until they couldn’t plead anymore and released tears. I’m on such a roll I stall so I can remember the new material I want to work on. As I think, a fan calls out.</h2>
             <h2>“Jayson!”</h2>
             <h2>“Yeah?”</h2>
             <h2>“Happy Birthday!”</h2>
@@ -244,24 +244,28 @@ function FrenchToast() {
 
         {/*PAGE4*/}
 
-        <ParallaxLayer sticky={{ start: (page4 - 4), end: (page4 - .5) }} style={{ ...alignCentergreen, top: '8vh' }}>
+        <ParallaxLayer sticky={{ start: (page4 - 5), end: (page4 - 1) }} style={{ ...alignCentergreen, top: '8vh' }}>
           <div className='metext'><p className='metextcontent'>You’d make me feel like I was the best son a mother could have, or ever want.</p></div>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: (page4 - 3), end: (page4 - .5) }} style={{ ...alignCentergreen, top: '20vh' }}>
+        <ParallaxLayer sticky={{ start: (page4 - 4), end: (page4 - 1) }} style={{ ...alignCentergreen, top: '20vh' }}>
           <div className='metext'><p className='metextcontent'>Because all you ever wanted was for me to be happy.</p></div>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: (page4 - 2), end: (page4 - .5) }} style={{ ...alignCentergreen, top: '32vh' }}>
+        <ParallaxLayer sticky={{ start: (page4 - 3), end: (page4 - 1) }} style={{ ...alignCentergreen, top: '32vh' }}>
           <div className='metext'><p className='metextcontent'>But you don’t own IHOP.</p></div>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: (page4 - 1), end: (page4 - .5) }} style={{ ...alignCentergreen, top: '44vh' }}>
+        <ParallaxLayer sticky={{ start: (page4 - 2), end: (page4 - 1) }} style={{ ...alignCentergreen, top: '44vh' }}>
           <div className='metext'><p className='metextcontent'>And you won’t.</p></div>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: (page4 - .5), end: (page4 - .5) }} style={{ ...alignCentergreen, top: '56vh' }}>
-          <div className='metext'><p className='metextcontent'>And you never will, and I’ll never see you again, and I miss you so so much mom, and I’m so so goddamn sorry.</p></div>
+        <ParallaxLayer sticky={{ start: (page4 - 1.5), end: (page4 - 1) }} style={{ ...alignCentergreen, top: '56vh' }}>
+          <div className='metext'><p className='metextcontent'>And you never will.</p></div>
+        </ParallaxLayer>
+
+        <ParallaxLayer sticky={{ start: (page4 - 1), end: (page4 - 1) }} style={{ ...alignCentergreen, top: '68vh' }}>
+          <div className='metext'><p className='metextcontent'>And I’ll never see you again, and I miss you so so much mom, and I’m so so goddamn sorry.</p></div>
         </ParallaxLayer>
 
         {/*PAGE5*/}
