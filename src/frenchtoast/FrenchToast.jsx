@@ -54,14 +54,14 @@ function FrenchToast() {
             width: '10vw', height: '10vh'
           }}> <img src={arrow} alt="" /></ParallaxLayer>
         <ParallaxLayer sticky={{ start: firsttexts, end: (firsttexts) }} style={{ ...momtxtstyle, height: '15vh', top: '8vh' }}>
-          <div className='metext'><p className='metextcontent'>Hey Jay! T and I are dropping by a new Mexican place tonight that Ruth recommended - Mi Rancho. She said they have great burritos, which I know you love, even though they're not kosher. Let me know if you can make it, no pressure. Love you.</p></div>
+          <div className='metext'><p className='metextcontent'>Hey Jay! T and I are dropping by a new Mexican place tonight that Ruth recommended - Mi Rancho. She said they have great tacos al pastor, which I know you love, even though they're not kosher. Let me know if you can make it, no pressure. Love you.</p></div>
         </ParallaxLayer>
 
         {/**Intro*/}
         <ParallaxLayer sticky={{ start: intro - 1, end: intro - 1 }} style={{ top: '2vh', height: '80vh', marginLeft: '15vw', width: '70vw', textAlign: 'center', justifyContent: 'center', display: 'flex' }}>
           <div><h2>I click my phone off, and continue wandering the streets of Chicago’s Oak Park, trying to think of reasons not to smoke. In the hours it had taken me to, well, not think of a reason, the sun had made its way to the horizon, reaching up to paint the scattered clouds a dark blue with vermillion outline, patterning across an even oranger sky behind it.</h2>
             <br />
-            <h2>I know I shouldn’t smoke. For god’s sake, every kid knows he shouldn’t smoke. Everyone knows. I know that my lungs shouldn’t hurt when I breathe deeply. I know that my heart shouldn’t rock furiously before reaching the second flight of stairs. I know my leg shouldn’t bounce so many times a day it's a travesty my calves don’t look like Schwarzenegger’s. If these were reason enough, then 14-year-old Jay wouldn’t have lit up a second time, and I wouldn’t be spending my entire day walking these streets trying to convince myself to quit. Then again, it would be nice to exercise without needing a break. Almost, just nearly, barely, but not quite as nice as it might be to have one more smoke.</h2>
+            <h2>I know I shouldn’t smoke. For god’s sake, every kid knows they shouldn’t smoke. Everyone knows. I know that my lungs shouldn’t hurt when I breathe deeply. I know that my heart shouldn’t rock furiously before reaching the second flight of stairs. I know my leg shouldn’t bounce so many times a day it's a travesty my calves don’t look like Schwarzenegger’s. If these were reason enough, then 14-year-old Jay wouldn’t have lit up a second time, and I wouldn’t be spending my entire day walking these streets trying to convince myself to quit. Then again, it would be nice to exercise without needing a break. Almost, just nearly, barely, but not quite as nice as it might be to have one more smoke.</h2>
           </div>
         </ParallaxLayer>
 
@@ -286,7 +286,7 @@ function FrenchToast() {
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: page5 + 1, end: pages }} style={{ top: '2vh', height: '80vh', marginLeft: '10vw', width: '80vw', textAlign: 'center', justifyContent: 'center', display: 'flex' }}>
-          <h2>As I cross the DuSable, the brisk night’s crisp river air fills my beaten lungs with a soothing, cleansing chill. <br /><br /> I throw my pack in the river.</h2>
+          <h2>As I cross the DuSable bridge, the brisk night’s crisp river air fills my beaten lungs with a soothing, cleansing chill. <br /><br /> I throw my pack in the river.</h2>
         </ParallaxLayer>
       </Parallax>
     </div >

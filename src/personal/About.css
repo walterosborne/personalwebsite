@@ -8,25 +8,44 @@
 }
 
 #infocontainer {
-  padding: 10px;
+  width: fit-content;
+  height: fit-content;
   border-radius: 10%;
-  top: 15vh;
+  top: 25vh;
   position: absolute;
-  right: 15vw;
-  margin-left: 55vw;
-  background-color: rgb(213, 213, 213);
+  left: 25vw;
+  background-color: rgba(213, 213, 213, .85);
   font-family: "Times New Roman", Times, serif;
 }
 
 
 #info {
-  max-width: 88vw;
+  margin-left: 2.5vw;
+  margin-top: 5vh;
+  margin-bottom: 2.5vw;
+  width: 45vw;
+  min-height: 40vh;
   position: relative;
 }
 
 @media (max-width: 800px) {
   #infocontainer {
-    top: 25vh;
-    margin-left: 20vw;
+    top: 5vh;
+    margin-left: 10vw;
+    text-align: center;
+  }
+
+  #info {
+    margin-left: 0vw;
+    margin-top: 5vh;
+    margin-bottom: 2.5vw;
+    width: 55vw;
+    min-height: 40vh;
+    position: relative;
+  }
+
+  #profimg {
+    height: 52vw;
+    width: 39vw;
   }
 }
