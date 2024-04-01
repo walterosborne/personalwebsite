@@ -4,10 +4,11 @@
   text-align: left;
   border-radius: 10px;
   width: 37.5vw;
-  height: 8vh;
+  height: fit-content;
   font-size: 15px;
-  margin-top: 2%;
+  margin-top: 2vh;
   margin-left: 1%;
+  margin-bottom: 2vh;
 }
 
 next {

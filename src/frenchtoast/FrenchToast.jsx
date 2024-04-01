@@ -35,6 +35,10 @@ function FrenchToast() {
     color: 'white', marginLeft: '2vw', justifyContent: 'left', backgroundImage: `url(${momtxt})`, textAlign: 'left',
     width: '40vw', height: '10vh', backgroundSize: '100% 100%', minHeight: '5vh', display: 'flex', alignItems: 'left', paddingLeft: '1.5vw'
   }
+  const momtxtstyleexp = {
+    color: 'white', marginLeft: '2vw', justifyContent: 'left', backgroundImage: `url(${momtxt})`, textAlign: 'left',
+    width: '40vw', height: 'fit-content', backgroundSize: '100% 100%', minHeight: '5vh', display: 'flex', alignItems: 'left', paddingLeft: '1.5vw'
+  }
 
   return (
     <div className="App">
@@ -53,8 +57,8 @@ function FrenchToast() {
             top: '85vh', marginLeft: '47.5vw',
             width: '10vw', height: '10vh'
           }}> <img src={arrow} alt="" /></ParallaxLayer>
-        <ParallaxLayer sticky={{ start: firsttexts, end: (firsttexts) }} style={{ ...momtxtstyle, height: '15vh', top: '8vh' }}>
-          <div className='metext'><p className='metextcontent'>Hey Jay! T and I are dropping by a new Mexican place tonight that Ruth recommended - Mi Rancho. She said they have great tacos al pastor, which I know you love, even though they're not kosher. Let me know if you can make it, no pressure. Love you.</p></div>
+        <ParallaxLayer sticky={{ start: firsttexts, end: (firsttexts) }} style={{ ...momtxtstyleexp, top: '8vh' }}>
+          <div className='metext'><p className='metextcontent'>Hey Jay! T and I are dropping by a new Mexican place tonight that Ruth recommended - Mi Rancho. She said they have great tacos al pastor, which I know are your favorite food (even though it's neither my excellent french toast, nor even kosher). Let me know if you can make it, no pressure. Love you.</p></div>
         </ParallaxLayer>
 
         {/**Intro*/}
@@ -193,7 +197,7 @@ function FrenchToast() {
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: (page2 - 3), end: (page2 - .5) }} style={{ ...alignCentergreen, top: '20vh' }}>
-          <div className='metext'><p className='metextcontent'>And I want french toast.</p></div>
+          <div className='metext'><p className='metextcontent'>And I want your french toast.</p></div>
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: (page2 - 2), end: (page2 - .5) }} style={{ ...alignCentergreen, top: '32vh' }}>
