@@ -1,5 +1,5 @@
 import React from 'react'
-import Bg from './Me.jpeg'
+import Bg from './me.jpeg'
 import Prof from './professional.jpeg'
 import './About.css'
 import Navbar from './Navbar.jsx';

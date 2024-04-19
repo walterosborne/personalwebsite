@@ -9,35 +9,13 @@
     "@react-spring/parallax": "^9.7.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-router-dom": "^6.22.3"
+    "react-router-dom": "^6.22.3",
+    "vite-plugin-pwa": "^0.19.8"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@vitejs/plugin-react": "^1.3.0",
-    "vite": "^2.9.15"
-  },
-  "manifest_version": 3,
-  "name": "worldwidewalt",
-  "displayName": "World Wide Walt",
-  "version": "0.0.0",
-  "start_url": "https://walterosborne.com/",
-  "display": "fullscreen",
-  "description": "Walt's Personal Website",
-  "background_color": "#000000",
-  "theme_color": "#007ba7",
-  "icons": [
-    {
-      "src": "https://walterosborne.com/512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "https://walterosborne.com/196.png",
-      "sizes": "196x196",
-      "type": "image/png",
-      "purpose": "any"
-    }
-  ]
+    "vite": "^5.0.0"
+  }
 }

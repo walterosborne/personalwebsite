@@ -1,4 +1,4 @@
-import styles from './Home.css';
+import './Home.css';
 import Navbar from './Navbar.jsx';
 import Bg from './Bg.jpeg'
 
