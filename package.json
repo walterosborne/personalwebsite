@@ -19,7 +19,7 @@
   },
   "manifest_version": 3,
   "name": "worldwidewalt",
-  "version": "1.0",
+  "version": "0.0.0",
   "start_url": "https://walterosborne.com/",
   "display": "fullscreen",
   "description": "Walt's Personal Website",
