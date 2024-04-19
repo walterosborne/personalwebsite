@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "World Wide Walt",
     "version": "1.0",
-    "start_url": "/",
+    "start_url": "https://walterosborne.com/",
     "display": "fullscreen",
     "description": "Walt's Personal Website",
     "background_color": "#000000",
@@ -11,13 +11,13 @@
         {
             "src": "512.png",
             "sizes": "512x512",
-            "type": "image/png",
+            "type": "images/image/png",
             "purpose": "maskable"
         },
         {
             "src": "196.png",
             "sizes": "196x196",
-            "type": "image/png",
+            "type": "images/image/png",
             "purpose": "any"
         }
     ]
