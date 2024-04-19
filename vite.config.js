@@ -8,7 +8,7 @@ export default defineConfig({
     includeAssets: ['196.png', '512.png'],
     manifest: {
       "manifest_version": 3,
-      "name": "worldwidewalt",
+      "name": "World Wide Walt",
       "version": "0.0.0",
       "start_url": "https://walterosborne.com/",
       "display": "fullscreen",
