@@ -18,7 +18,7 @@
     "vite": "^2.9.15"
   },
   "manifest_version": 3,
-  "name": "World Wide Walt",
+  "name": "worldwidewalt",
   "version": "1.0",
   "start_url": "https://walterosborne.com/",
   "display": "fullscreen",
