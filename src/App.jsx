@@ -4,6 +4,7 @@ import Professional from './personal/Professional.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import React from 'react'
 import FrenchToast from './frenchtoast/FrenchToast'
+import Chapbook from './chapbook/World.jsx'
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                     <Route path='/aboutme' exact element={<About />} />
                     <Route path='/professional' exact element={<Professional />}></Route>
                     <Route path='/frenchtoast' exact element={<FrenchToast />}></Route>
+                    <Route path='/chapbook' exact element={<Chapbook />}></Route>
                 </Routes>
             </Router>
         </>
