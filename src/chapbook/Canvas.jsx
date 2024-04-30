@@ -7,6 +7,9 @@ import greentarget from './Images/greentarget.png'
 import lab from './Images/Lab.png'
 import vat from './Images/vat.png'
 import metal from './Images/metal.jpeg'
+import intro from './Images/Intro.png'
+import bacc from './Images/Bacc.png'
+import shards from './Images/Shards sign.png'
 import { useState, useEffect, useRef } from "react"
 
 
@@ -120,6 +123,8 @@ const Canvas = () => {
                         if ((player.position.x > (200 + (createImage(metal).width / (10 / 6))))
                             && (player.position.x < (200 + (.95 * (createImage(metal).width))))) {
                             setenv(sanfran)
+                            player.position.x = 10
+                            player.position.y = 700
                         }
                     }
             }),
@@ -138,8 +143,8 @@ const Canvas = () => {
             //Vats
             new Platform({ x: 1130, y: 430, image: createImage(vat), border: 'top', trigger: null }),
             new Platform({ x: 600, y: 430, image: createImage(vat), border: 'top', trigger: null }),
-            new Platform({ x: 200, y: 550 - createImage(vat).height, image: createImage(vat), border: 'top', trigger: null }),
-            new Platform({ x: 830, y: 550 - createImage(vat).height, image: createImage(vat), border: 'top', trigger: null })
+            new Platform({ x: 200, y: 560 - createImage(vat).height, image: createImage(vat), border: 'top', trigger: null }),
+            new Platform({ x: 840, y: 560 - createImage(vat).height, image: createImage(vat), border: 'top', trigger: null })
         ],
         genobjs: [
             new GenericObject({
@@ -162,6 +167,21 @@ const Canvas = () => {
                 x: (620 - (createImage(metal).width / 2)) + (createImage(greentarget).width / 2),
                 y: (700 + (createImage(metal).height / 2)) - (createImage(greentarget).height / 2) + 1,
                 image: createImage(greentarget)
+            }),
+            new GenericObject({
+                x: 400,
+                y: 0,
+                image: createImage(intro)
+            }),
+            new GenericObject({
+                x: 850,
+                y: 300,
+                image: createImage(bacc)
+            }),
+            new GenericObject({
+                x: 210,
+                y: 330,
+                image: createImage(shards)
             })],
         background: [new GenericObject({ x: 0, y: 0, image: createImage(lab) })]
     })
@@ -197,10 +217,12 @@ const Canvas = () => {
         switch (key) {
             case "a":
             case "A":
+            case "ArrowLeft":
                 keys.left.pressed = true;
                 break
             case "w":
             case "W":
+            case "ArrowUp":
                 //console.log('up')
                 if (player.velocity.y == 0) {
                     player.velocity.y -= 10
@@ -209,10 +231,12 @@ const Canvas = () => {
                 break
             case "s":
             case "S":
+            case "ArrowDown":
                 keys.down.pressed = true;
                 break
             case "d":
             case "D":
+            case "ArrowRight":
                 keys.right.pressed = true;
                 break
             case "g":
@@ -232,18 +256,22 @@ const Canvas = () => {
         switch (key) {
             case "a":
             case "A":
+            case "ArrowLeft":
                 keys.left.pressed = false;
                 break
             case "w":
             case "W":
+            case "ArrowUp":
                 keys.up.pressed = false;
                 break
             case "s":
             case "S":
+            case "ArrowDown":
                 keys.down.pressed = false;
                 break
             case "d":
             case "D":
+            case "ArrowRight":
                 keys.right.pressed = false;
                 break
             case "g":
@@ -325,7 +353,9 @@ const Canvas = () => {
                     setfly(false)
                     window.open("https://docs.google.com/document/d/1zELrjcJs1G8CG7kHPOLHFT6P0BLDevqCPgjGYIloHv8/edit?usp=sharing", "_blank")
                     setenv(home)
-                    setPlayer(new Player())
+                    player.position.x = 10
+                    player.position.y = 700
+                    player.velocity.y = 0
                 }
             }
 
