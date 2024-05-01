@@ -27,6 +27,13 @@ const Canvas = () => {
         return img
     }
 
+    class MeImage {
+        constructor(name, image) {
+            this.name = name
+            this.image = image
+        }
+    }
+
     class Player {
         constructor() {
             this.position = {
@@ -37,8 +44,8 @@ const Canvas = () => {
                 x: 0,
                 y: 1
             }
-            this.width = 30
-            this.height = 30
+            this.width = 107
+            this.height = 291
         }
     }
 
@@ -330,6 +337,7 @@ const Canvas = () => {
     let [width, setWidth] = useState(1536);
     let [player, setPlayer] = useState(new Player());
     let [environment, setenv] = useState(home);
+    let [meimg, setMeimg] = useState(me);
     let [flying, setfly] = useState(false);
 
     let gravity = .25
@@ -351,8 +359,9 @@ const Canvas = () => {
             environment.background.forEach(genobj => { context.drawImage(genobj.image, genobj.position.x, genobj.position.y) })
             environment.platforms.forEach(platform => { context.drawImage(platform.image, platform.position.x, platform.position.y) })
             environment.genobjs.forEach(genobj => { context.drawImage(genobj.image, genobj.position.x, genobj.position.y) })
-            context.fillStyle = 'red'
-            context.fillRect(player.position.x, player.position.y, player.width, player.height);
+            //context.fillStyle = 'red'
+            //context.fillRect(player.position.x, player.position.y, player.width, player.height);
+            context.drawImage(createImage(meimg), player.position.x, player.position.y)
             player.position.x += player.velocity.x
             if ((environment.name == 'santafe')
                 && (environment.background[0].position.y != -1164)
@@ -379,9 +388,11 @@ const Canvas = () => {
             //console.log(.2 * height)
             if (keys.right.pressed && player.position.x < (width) - player.width) {
                 player.velocity.x = 5
+                // if (meimg != meleft) {setMeimg(meleft)}
             }
             else if (keys.left.pressed && player.position.x > 0) {
                 player.velocity.x = -5
+                // setMeimg(meright)
             }
 
             else {
