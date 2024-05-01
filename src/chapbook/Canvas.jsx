@@ -5,11 +5,16 @@ import sf from './Images/sftall2.png'
 import target from './Images/target.png'
 import greentarget from './Images/greentarget.png'
 import lab from './Images/Lab.png'
-import vat from './Images/vat.png'
+import me from './Images/me.png'
+import meright from './Images/merunleft.png'
+import meleft from './Images/merunright.png'
 import metal from './Images/metal.jpeg'
 import intro from './Images/Intro.png'
-import bacc from './Images/Bacc.png'
-import shards from './Images/Shards sign.png'
+import bacc from './Images/baccvat.png'
+import shards from './Images/shards.png'
+import santafevat from './Images/santafe.png'
+import frenchtoastvat from './Images/frenchtoastvat.png'
+import yard from './Images/yard.png'
 import { useState, useEffect, useRef } from "react"
 
 
@@ -76,6 +81,30 @@ const Canvas = () => {
         }
     }
 
+    const santafe = new Environment({
+        name: 'santafe',
+        platforms: [
+            new Platform({
+                x: 1300, y: -735, image: createImage(greentarget), border: 'top', trigger:
+                    () => {
+                        window.open("https://docs.google.com/document/d/1GWt_AhSbHuNmVhq-ARRjVe-kv4zXVDaPo2hFqK1zWsw/edit?usp=sharing", "_blank")
+                        setenv(home)
+                        player.position.x = 10
+                        player.position.y = 700
+                    }
+            }),
+            new Platform({ x: 800, y: -768, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 350, y: -795, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 185, y: -650, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 185, y: -460, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 185, y: -270, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 185, y: -80, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 185, y: 110, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 185, y: 300, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 185, y: 500, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 185, y: 680, image: createImage(target), border: 'top', trigger: null }),
+        ], genobjs: [], background: [new GenericObject({ x: 0, y: -1164, image: createImage(yard) })]
+    })
     const classroom = new Environment({
         name: 'classroom',
         platforms: [
@@ -88,8 +117,8 @@ const Canvas = () => {
                     () => {
                         window.open("https://docs.google.com/document/d/1T8xD6tlW2CqC0c6QnUod2aph5lYthVo3sbtq_wiDJ5k/edit?usp=sharing", "_blank")
                         setenv(home)
-
-                        //setPlayer(new Player())
+                        player.position.x = 10
+                        player.position.y = 700
                     }
 
             })
@@ -111,7 +140,7 @@ const Canvas = () => {
             new Platform({ x: 470, y: 1890 - 1207, image: createImage(target), border: 'top', trigger: null }),
             new Platform({ x: 580, y: 1640 - 1207, image: createImage(target), border: 'top', trigger: null }),
             new Platform({ x: 880, y: 1820 - 1207, image: createImage(target), border: 'top', trigger: null })]
-        , genobjs: [], background: [new GenericObject({ x: 0, y: -1227 + 63, image: createImage(sf) })]
+        , genobjs: [], background: [new GenericObject({ x: 0, y: -1164, image: createImage(sf) })]
     })
     const home = new Environment({
         name: 'home',
@@ -120,68 +149,78 @@ const Canvas = () => {
             new Platform({
                 x: 200, y: 500, image: createImage(metal), border: 'mid', trigger:
                     () => {
-                        if ((player.position.x > (200 + (createImage(metal).width / (10 / 6))))
-                            && (player.position.x < (200 + (.95 * (createImage(metal).width))))) {
-                            setenv(sanfran)
-                            player.position.x = 10
-                            player.position.y = 700
+                        if ((player.position.x > 395)
+                            && (player.position.x < 480)) {
+                            keys.g.pressed = false
+                            window.open("https://walterosborne.com/frenchtoast", "_blank")
+                            //player.position.x = 10
+                            //player.position.x = .3 * height
                         }
                     }
             }),
             new Platform({
-                x: (1336 - createImage(metal).width) - 200, y: 500, image: createImage(metal), border: 'mid', trigger:
+                x: 830, y: 500, image: createImage(metal), border: 'mid', trigger:
                     () => {
-                        if ((player.position.x > (((1336 - createImage(metal).width) - 200) + (createImage(metal).width / (10 / 6))))
-                            && (player.position.x < (((1336 - createImage(metal).width) - 200) + (.95 * (createImage(metal).width))))) {
+                        if ((player.position.x > 1027)
+                            && (player.position.x < 1120)) {
                             setenv(classroom)
-                            setPlayer(new Player())
+                            player.position.x = 10
+                            player.position.y = 700
+                        } else {
+                            console.log(player.position.x)
                         }
                     }
             }),
-            new Platform({ x: (1536 - createImage(metal).width) - 200, y: 700, image: createImage(metal), border: 'mid', trigger: null }),
-            new Platform({ x: 500, y: 700, image: createImage(metal), border: 'mid', trigger: null }),
+            new Platform({
+                x: 1035, y: 700, image: createImage(metal), border: 'mid', trigger: () => {
+                    setenv(santafe)
+                    player.position.x = 10
+                    player.position.y = 700
+                }
+            }),
+            new Platform({
+                x: 500, y: 700, image: createImage(metal), border: 'mid', trigger: () => {
+
+                    if ((player.position.x > 500)
+                        && (player.position.x < 590)) {
+                        setenv(sanfran)
+                        player.position.x = 10
+                        player.position.y = 700
+                    }
+                }
+            }),
             //Vats
-            new Platform({ x: 1130, y: 430, image: createImage(vat), border: 'top', trigger: null }),
-            new Platform({ x: 600, y: 430, image: createImage(vat), border: 'top', trigger: null }),
-            new Platform({ x: 200, y: 560 - createImage(vat).height, image: createImage(vat), border: 'top', trigger: null }),
-            new Platform({ x: 840, y: 560 - createImage(vat).height, image: createImage(vat), border: 'top', trigger: null })
+            new Platform({ x: 1130, y: 430, image: createImage(santafevat), border: 'top', trigger: null }),
+            new Platform({ x: 600, y: 430, image: createImage(shards), border: 'top', trigger: null }),
+            new Platform({ x: 200, y: 560 - 327, image: createImage(frenchtoastvat), border: 'top', trigger: null }),
+            new Platform({ x: 840, y: 560 - 327, image: createImage(bacc), border: 'top', trigger: null })
         ],
         genobjs: [
             new GenericObject({
-                x: (300 + (createImage(metal).width / 2)) - (createImage(greentarget).width / 2),
-                y: (500 + (createImage(metal).height / 2)) - (createImage(greentarget).height / 2) + 1,
+                x: (414),
+                y: (525),
                 image: createImage(greentarget)
             }),
 
             new GenericObject({
-                x: (930 + (createImage(metal).width / 2)) - (createImage(greentarget).width / 2),
-                y: (500 + (createImage(metal).height / 2)) - (createImage(greentarget).height / 2) + 1,
+                x: 1050,
+                y: 525,
                 image: createImage(greentarget)
             }),
             new GenericObject({
-                x: (620 - (createImage(metal).width / 2)) + (createImage(greentarget).width / 2),
-                y: (700 + (createImage(metal).height / 2)) - (createImage(greentarget).height / 2) + 1,
+                x: 1050,
+                y: 725,
                 image: createImage(greentarget)
             }),
             new GenericObject({
-                x: (620 - (createImage(metal).width / 2)) + (createImage(greentarget).width / 2),
-                y: (700 + (createImage(metal).height / 2)) - (createImage(greentarget).height / 2) + 1,
+                x: 525,
+                y: 725,
                 image: createImage(greentarget)
             }),
             new GenericObject({
                 x: 400,
                 y: 0,
                 image: createImage(intro)
-            }),
-            new GenericObject({
-                x: 850,
-                y: 300,
-                image: createImage(bacc)
-            }),
-            new GenericObject({
-                x: 210,
-                y: 330,
-                image: createImage(shards)
             })],
         background: [new GenericObject({ x: 0, y: 0, image: createImage(lab) })]
     })
@@ -315,14 +354,29 @@ const Canvas = () => {
             context.fillStyle = 'red'
             context.fillRect(player.position.x, player.position.y, player.width, player.height);
             player.position.x += player.velocity.x
+            if ((environment.name == 'santafe')
+                && (environment.background[0].position.y != -1164)
+                && ((player.position.y + player.height + player.velocity.y) > .8 * height)) {
+                environment.background.forEach(background => { background.position.y -= 5 })
+                environment.platforms.forEach(platform => { platform.position.y -= 5 })
+                environment.genobjs.forEach(genobj => { genobj.position.y -= 5 })
+            }
             if ((player.position.y + player.height + player.velocity.y) < height) {
                 player.position.y += player.velocity.y
                 player.velocity.y += gravity
-            } else {
+            }
+            else {
                 player.position.y = height - player.height
                 player.velocity.y = 0
             }
-
+            if ((environment.name == 'santafe') && ((player.position.y + player.height + player.velocity.y) < .2 * height)) {
+                environment.background.forEach(background => { background.position.y += 5 })
+                environment.platforms.forEach(platform => { platform.position.y += 5 })
+                environment.genobjs.forEach(genobj => { genobj.position.y += 5 })
+                player.position.y += 5
+            }
+            //console.log((player.position.y + player.height + player.velocity.y))
+            //console.log(.2 * height)
             if (keys.right.pressed && player.position.x < (width) - player.width) {
                 player.velocity.x = 5
             }
@@ -339,6 +393,7 @@ const Canvas = () => {
                 }*/
                 player.velocity.x = 0
             }
+
 
             if (flying) {
                 if (gravity > 0) {
@@ -403,7 +458,7 @@ const Canvas = () => {
             })
 
             if (keys.k.pressed) {
-                setenv(sanfran)
+                setenv(santafe)
             }
 
             if (keys.h.pressed) {
