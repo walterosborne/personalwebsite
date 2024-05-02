@@ -45,15 +45,15 @@ const Canvas = () => {
     }
 
     class Platform {
-        constructor({ x, y, image, border, trigger }) {
+        constructor({ x, y, width, height, image, border, trigger }) {
 
             this.position = {
                 x,
                 y,
             }
             this.image = image
-            this.width = image.width
-            this.height = image.height
+            this.width = width
+            this.height = height
             this.border = border
             this.trigger = trigger
         }
@@ -87,7 +87,7 @@ const Canvas = () => {
         name: 'santafe',
         platforms: [
             new Platform({
-                x: 1300, y: -735, image: createImage(greentarget), border: 'top', trigger:
+                x: 1300, y: -735, width: 72, height: 72, image: createImage(greentarget), border: 'top', trigger:
                     () => {
                         window.open("https://docs.google.com/document/d/1GWt_AhSbHuNmVhq-ARRjVe-kv4zXVDaPo2hFqK1zWsw/edit?usp=sharing", "_blank")
                         setenv(home)
@@ -95,27 +95,27 @@ const Canvas = () => {
                         player.position.y = 700
                     }
             }),
-            new Platform({ x: 800, y: -768, image: createImage(target), border: 'top', trigger: null }),
-            new Platform({ x: 350, y: -795, image: createImage(target), border: 'top', trigger: null }),
-            new Platform({ x: 185, y: -650, image: createImage(target), border: 'top', trigger: null }),
-            new Platform({ x: 185, y: -460, image: createImage(target), border: 'top', trigger: null }),
-            new Platform({ x: 185, y: -270, image: createImage(target), border: 'top', trigger: null }),
-            new Platform({ x: 185, y: -80, image: createImage(target), border: 'top', trigger: null }),
-            new Platform({ x: 185, y: 110, image: createImage(target), border: 'top', trigger: null }),
-            new Platform({ x: 185, y: 300, image: createImage(target), border: 'top', trigger: null }),
-            new Platform({ x: 185, y: 500, image: createImage(target), border: 'top', trigger: null }),
-            new Platform({ x: 185, y: 680, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 800, y: -768, width: 72, height: 72, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 350, y: -795, width: 72, height: 72, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 185, y: -650, width: 72, height: 72, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 185, y: -460, width: 72, height: 72, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 185, y: -270, width: 72, height: 72, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 185, y: -80, width: 72, height: 72, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 185, y: 110, width: 72, height: 72, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 185, y: 300, width: 72, height: 72, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 185, y: 500, width: 72, height: 72, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 185, y: 680, width: 72, height: 72, image: createImage(target), border: 'top', trigger: null }),
         ], genobjs: [], background: [new GenericObject({ x: 0, y: -1164, image: createImage(yard) })]
     })
     const classroom = new Environment({
         name: 'classroom',
         platforms: [
-            new Platform({ x: 300, y: 720, image: createImage(chairs), border: 'top', trigger: null }),
-            new Platform({ x: 750, y: 580, image: createImage(chairs), border: 'top', trigger: null }),
-            new Platform({ x: 400, y: 450, image: createImage(chairs), border: 'top', trigger: null }),
-            new Platform({ x: 790, y: 165, image: createImage(doors), border: 'bottom', trigger: null }),
+            new Platform({ x: 300, y: 720, width: 445, height: 100, image: createImage(chairs), border: 'top', trigger: null }),
+            new Platform({ x: 750, y: 580, width: 445, height: 100, image: createImage(chairs), border: 'top', trigger: null }),
+            new Platform({ x: 400, y: 450, width: 445, height: 100, image: createImage(chairs), border: 'top', trigger: null }),
+            new Platform({ x: 790, y: 165, width: 186, height: 187, image: createImage(doors), border: 'bottom', trigger: null }),
             new Platform({
-                x: 845, y: 345, image: createImage(greentarget), border: 'top', trigger:
+                x: 845, y: 345, width: 72, height: 72, image: createImage(greentarget), border: 'top', trigger:
                     () => {
                         window.open("https://docs.google.com/document/d/1T8xD6tlW2CqC0c6QnUod2aph5lYthVo3sbtq_wiDJ5k/edit?usp=sharing", "_blank")
                         setenv(home)
@@ -129,19 +129,19 @@ const Canvas = () => {
     const sanfran = new Environment({
         name: 'sanfran',
         platforms: [
-            new Platform({ x: 400, y: 1460 - 1207, image: createImage(target), border: 'top', trigger: null }),
-            new Platform({ x: 585, y: 1350 - 1207, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 400, y: 1460 - 1207, width: 72, height: 72, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 585, y: 1350 - 1207, width: 72, height: 72, image: createImage(target), border: 'top', trigger: null }),
             new Platform({
-                x: 910, y: 1355 - 1207, image: createImage(greentarget), border: 'top', trigger:
+                x: 910, y: 1355 - 1207, width: 72, height: 72, image: createImage(greentarget), border: 'top', trigger:
                     () => {
                         player.velocity.y = 0
                         setfly(true)
                     }
 
             }),
-            new Platform({ x: 470, y: 1890 - 1207, image: createImage(target), border: 'top', trigger: null }),
-            new Platform({ x: 580, y: 1640 - 1207, image: createImage(target), border: 'top', trigger: null }),
-            new Platform({ x: 880, y: 1820 - 1207, image: createImage(target), border: 'top', trigger: null })]
+            new Platform({ x: 470, y: 1890 - 1207, width: 72, height: 72, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 580, y: 1640 - 1207, width: 72, height: 72, image: createImage(target), border: 'top', trigger: null }),
+            new Platform({ x: 880, y: 1820 - 1207, width: 72, height: 72, image: createImage(target), border: 'top', trigger: null })]
         , genobjs: [], background: [new GenericObject({ x: 0, y: -1164, image: createImage(sf) })]
     })
     const home = new Environment({
@@ -149,19 +149,20 @@ const Canvas = () => {
         platforms: [
             //Floors
             new Platform({
-                x: 200, y: 500, image: createImage(metal), border: 'mid', trigger:
+                x: 200, y: 500, width: 300, height: 75, image: createImage(metal), border: 'mid', trigger:
                     () => {
                         if ((player.position.x > 300)
                             && (player.position.x < 480)) {
+                            keys.g.pressed = false
+                            player.position.x = 10
+                            player.position.y = .3 * height
                             window.open("https://walterosborne.com/frenchtoast", "_blank")
-                            //player.position.x = 10
-                            //player.position.y = .3 * height
                             keys.g.pressed = false
                         }
                     }
             }),
             new Platform({
-                x: 830, y: 500, image: createImage(metal), border: 'mid', trigger:
+                x: 830, y: 500, width: 300, height: 75, image: createImage(metal), border: 'mid', trigger:
                     () => {
                         if ((player.position.x > 950)
                             && (player.position.x < 1120)) {
@@ -172,7 +173,7 @@ const Canvas = () => {
                     }
             }),
             new Platform({
-                x: 1035, y: 700, image: createImage(metal), border: 'mid', trigger: () => {
+                x: 1035, y: 700, width: 300, height: 75, image: createImage(metal), border: 'mid', trigger: () => {
 
                     if ((player.position.x > 950)
                         && (player.position.x < 1110)) {
@@ -184,7 +185,7 @@ const Canvas = () => {
                 }
             }),
             new Platform({
-                x: 500, y: 700, image: createImage(metal), border: 'mid', trigger: () => {
+                x: 500, y: 700, width: 300, height: 75, image: createImage(metal), border: 'mid', trigger: () => {
 
                     if ((player.position.x > 425)
                         && (player.position.x < 590)) {
@@ -195,10 +196,10 @@ const Canvas = () => {
                 }
             }),
             //Vats
-            new Platform({ x: 1130, y: 430, image: createImage(santafevat), border: 'top', trigger: null }),
-            new Platform({ x: 600, y: 430, image: createImage(shards), border: 'top', trigger: null }),
-            new Platform({ x: 200, y: 560 - 327, image: createImage(frenchtoastvat), border: 'top', trigger: null }),
-            new Platform({ x: 840, y: 560 - 327, image: createImage(bacc), border: 'top', trigger: null })
+            new Platform({ x: 1130, y: 430, width: 200, height: 327, image: createImage(santafevat), border: 'top', trigger: null }),
+            new Platform({ x: 600, y: 430, width: 200, height: 327, image: createImage(shards), border: 'top', trigger: null }),
+            new Platform({ x: 200, y: 560 - 327, width: 200, height: 327, image: createImage(frenchtoastvat), border: 'top', trigger: null }),
+            new Platform({ x: 840, y: 560 - 327, width: 200, height: 327, image: createImage(bacc), border: 'top', trigger: null })
         ],
         genobjs: [
             new GenericObject({
@@ -346,16 +347,17 @@ const Canvas = () => {
 
     //The following allows for side effects by running the following every render of the canvas component Canvas
     useEffect(() => {
+        console.log(player.position.y)
 
         const canvas = ref.current;
         const context = canvas.getContext('2d');
         let animationID
 
-        setenv(home);
-        setPlayer(player)
+        //setenv(home);
+        //setPlayer(player)
 
         const renderer = () => {
-
+            console.log(environment.name)
             context.clearRect(0, 0, 3000, 3000)
             environment.background.forEach(genobj => { context.drawImage(genobj.image, genobj.position.x, genobj.position.y) })
             environment.platforms.forEach(platform => { context.drawImage(platform.image, platform.position.x, platform.position.y) })
@@ -395,10 +397,8 @@ const Canvas = () => {
                 }
             }
             else if (keys.left.pressed && player.position.x > 0) {
-                console.log('uphere')
                 player.velocity.x = -5
                 if (playerface != 'left') {
-                    console.log('here')
                     //setplayerface('left')
                     //setPlayer(new Player(player.position.x, player.position.y, -5, player.velocity.y, 107, 291, meleft))
                 }
@@ -442,18 +442,25 @@ const Canvas = () => {
                         && (player.position.x + player.width >= platform.position.x)
                         && (player.position.x <= platform.position.x + platform.width)
                         && (!keys.down.pressed)) {
+                        console.log(platform.position.x)
+                        console.log(platform.position.y)
                         player.velocity.y = 0
                         if (platform.trigger && keys.g.pressed) {
                             console.log(platform.trigger())
                         }
                     }
                 }
-                if (platform.border == 'bottom') {
+                else if (platform.border == 'bottom') {
                     if ((player.position.y + player.height <= (platform.position.y + platform.height))
                         && (player.position.y + player.height + player.velocity.y >= (platform.position.y + platform.height))
                         && (player.position.x + player.width >= platform.position.x)
                         && (player.position.x <= platform.position.x + platform.width)
                         && (!keys.down.pressed)) {
+                        //console.log(platform.position.x)
+                        //console.log(platform.position.y)
+                        //console.log(player.position.x)
+                        //console.log(player.position.y)
+                        //console.log(player.width)
                         player.velocity.y = 0
                         if (platform.trigger && keys.g.pressed) {
                             console.log(platform.trigger())
@@ -461,7 +468,7 @@ const Canvas = () => {
                     }
                 }
 
-                if (platform.border == 'mid') {
+                else if (platform.border == 'mid') {
                     if ((player.position.y + player.height <= (platform.position.y + (platform.height / 2)))
                         && (player.position.y + player.height + player.velocity.y >= (platform.position.y + (platform.height / 2)))
                         && (player.position.x + player.width >= platform.position.x)
