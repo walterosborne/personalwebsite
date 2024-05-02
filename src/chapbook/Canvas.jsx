@@ -351,6 +351,9 @@ const Canvas = () => {
         const context = canvas.getContext('2d');
         let animationID
 
+        setenv(home);
+        setPlayer(player)
+
         const renderer = () => {
 
             context.clearRect(0, 0, 3000, 3000)
