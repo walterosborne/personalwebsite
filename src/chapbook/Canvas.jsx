@@ -91,8 +91,8 @@ const Canvas = () => {
                     () => {
                         window.open("https://docs.google.com/document/d/1GWt_AhSbHuNmVhq-ARRjVe-kv4zXVDaPo2hFqK1zWsw/edit?usp=sharing", "_blank")
                         setenv(home)
-                        player.position.x = 10
-                        player.position.y = 700
+                        player.position.x = 400
+                        player.position.y = 450
                     }
             }),
             new Platform({ x: 800, y: -768, width: 72, height: 72, image: createImage(target), border: 'top', trigger: null }),
@@ -117,10 +117,12 @@ const Canvas = () => {
             new Platform({
                 x: 845, y: 345, width: 72, height: 72, image: createImage(greentarget), border: 'top', trigger:
                     () => {
+                        keys.g.pressed = false
                         window.open("https://docs.google.com/document/d/1T8xD6tlW2CqC0c6QnUod2aph5lYthVo3sbtq_wiDJ5k/edit?usp=sharing", "_blank")
                         setenv(home)
-                        player.position.x = 10
-                        player.position.y = 700
+                        player.position.x = 400
+                        player.position.y = 450
+                        keys.g.pressed = false
                     }
 
             })
@@ -134,8 +136,10 @@ const Canvas = () => {
             new Platform({
                 x: 910, y: 1355 - 1207, width: 72, height: 72, image: createImage(greentarget), border: 'top', trigger:
                     () => {
+                        keys.g.pressed = false
                         player.velocity.y = 0
                         setfly(true)
+                        keys.g.pressed = false
                     }
 
             }),
@@ -154,10 +158,12 @@ const Canvas = () => {
                         if ((player.position.x > 300)
                             && (player.position.x < 480)) {
                             keys.g.pressed = false
-                            player.position.x = 10
-                            player.position.y = .3 * height
+                            player.position.x = 400
+                            player.position.y = 450
                             window.open("https://walterosborne.com/frenchtoast", "_blank")
+                            console.log("finishes after link")
                             keys.g.pressed = false
+                            console.log('G pressed: ' + keys.g.pressed)
                         }
                     }
             }),
@@ -167,8 +173,8 @@ const Canvas = () => {
                         if ((player.position.x > 950)
                             && (player.position.x < 1120)) {
                             setenv(classroom)
-                            player.position.x = 10
-                            player.position.y = 700
+                            player.position.x = 400
+                            player.position.y = 450
                         }
                     }
             }),
@@ -178,8 +184,8 @@ const Canvas = () => {
                     if ((player.position.x > 950)
                         && (player.position.x < 1110)) {
                         setenv(santafe)
-                        player.position.x = 10
-                        player.position.y = 700
+                        player.position.x = 400
+                        player.position.y = 450
 
                     }
                 }
@@ -190,8 +196,8 @@ const Canvas = () => {
                     if ((player.position.x > 425)
                         && (player.position.x < 590)) {
                         setenv(sanfran)
-                        player.position.x = 10
-                        player.position.y = 700
+                        player.position.x = 400
+                        player.position.y = 450
                     }
                 }
             }),
@@ -285,6 +291,7 @@ const Canvas = () => {
                 keys.right.pressed = true;
                 break
             case "g":
+                console.log('here')
                 keys.g.pressed = true
                 break
             case "k":
@@ -334,7 +341,7 @@ const Canvas = () => {
 
     let [height, setHeight] = useState(864);
     let [width, setWidth] = useState(1536);
-    let [player, setPlayer] = useState(new Player(10, .3 * height, 0, 1, 107, 291, me));
+    let [player, setPlayer] = useState(new Player(400, 450, 0, 1, 107, 291, me));
     let [playerface, setplayerface] = useState('straight');
     let [environment, setenv] = useState(home);
     let [flying, setfly] = useState(false);
@@ -347,7 +354,6 @@ const Canvas = () => {
 
     //The following allows for side effects by running the following every render of the canvas component Canvas
     useEffect(() => {
-        console.log(player.position.y)
 
         const canvas = ref.current;
         const context = canvas.getContext('2d');
@@ -357,7 +363,7 @@ const Canvas = () => {
         //setPlayer(player)
 
         const renderer = () => {
-            console.log(environment.name)
+            console.log(keys.g.pressed)
             context.clearRect(0, 0, 3000, 3000)
             environment.background.forEach(genobj => { context.drawImage(genobj.image, genobj.position.x, genobj.position.y) })
             environment.platforms.forEach(platform => { context.drawImage(platform.image, platform.position.x, platform.position.y) })
@@ -429,8 +435,8 @@ const Canvas = () => {
                     setfly(false)
                     window.open("https://docs.google.com/document/d/1zELrjcJs1G8CG7kHPOLHFT6P0BLDevqCPgjGYIloHv8/edit?usp=sharing", "_blank")
                     setenv(home)
-                    player.position.x = 10
-                    player.position.y = 700
+                    player.position.x = 400
+                    player.position.y = 450
                     player.velocity.y = 0
                 }
             }
