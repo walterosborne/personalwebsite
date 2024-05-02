@@ -5,9 +5,9 @@ import sf from './Images/sftall2.png'
 import target from './Images/target.png'
 import greentarget from './Images/greentarget.png'
 import lab from './Images/Lab.png'
-import me from './Images/me.png'
-import meright from './Images/merunleft.png'
-import meleft from './Images/merunright.png'
+import me from './Images/meface.png'
+import meleft from './Images/merunleft.png'
+import meright from './Images/merunright.png'
 import metal from './Images/metal.jpeg'
 import intro from './Images/Intro.png'
 import bacc from './Images/baccvat.png'
@@ -27,25 +27,20 @@ const Canvas = () => {
         return img
     }
 
-    class MeImage {
-        constructor(name, image) {
-            this.name = name
-            this.image = image
-        }
-    }
-
     class Player {
-        constructor() {
+        constructor(x, y, vx, vy, w, h, image) {
+
             this.position = {
-                x: 10,
-                y: .3 * height
+                x: x,
+                y: y
             }
             this.velocity = {
-                x: 0,
-                y: 1
+                x: vx,
+                y: vy
             }
-            this.width = 107
-            this.height = 291
+            this.width = w
+            this.height = h
+            this.image = image
         }
     }
 
@@ -156,39 +151,42 @@ const Canvas = () => {
             new Platform({
                 x: 200, y: 500, image: createImage(metal), border: 'mid', trigger:
                     () => {
-                        if ((player.position.x > 395)
+                        if ((player.position.x > 300)
                             && (player.position.x < 480)) {
-                            keys.g.pressed = false
                             window.open("https://walterosborne.com/frenchtoast", "_blank")
                             //player.position.x = 10
-                            //player.position.x = .3 * height
+                            //player.position.y = .3 * height
+                            keys.g.pressed = false
                         }
                     }
             }),
             new Platform({
                 x: 830, y: 500, image: createImage(metal), border: 'mid', trigger:
                     () => {
-                        if ((player.position.x > 1027)
+                        if ((player.position.x > 950)
                             && (player.position.x < 1120)) {
                             setenv(classroom)
                             player.position.x = 10
                             player.position.y = 700
-                        } else {
-                            console.log(player.position.x)
                         }
                     }
             }),
             new Platform({
                 x: 1035, y: 700, image: createImage(metal), border: 'mid', trigger: () => {
-                    setenv(santafe)
-                    player.position.x = 10
-                    player.position.y = 700
+
+                    if ((player.position.x > 950)
+                        && (player.position.x < 1110)) {
+                        setenv(santafe)
+                        player.position.x = 10
+                        player.position.y = 700
+
+                    }
                 }
             }),
             new Platform({
                 x: 500, y: 700, image: createImage(metal), border: 'mid', trigger: () => {
 
-                    if ((player.position.x > 500)
+                    if ((player.position.x > 425)
                         && (player.position.x < 590)) {
                         setenv(sanfran)
                         player.position.x = 10
@@ -335,9 +333,9 @@ const Canvas = () => {
 
     let [height, setHeight] = useState(864);
     let [width, setWidth] = useState(1536);
-    let [player, setPlayer] = useState(new Player());
+    let [player, setPlayer] = useState(new Player(10, .3 * height, 0, 1, 107, 291, me));
+    let [playerface, setplayerface] = useState('straight');
     let [environment, setenv] = useState(home);
-    let [meimg, setMeimg] = useState(me);
     let [flying, setfly] = useState(false);
 
     let gravity = .25
@@ -361,7 +359,7 @@ const Canvas = () => {
             environment.genobjs.forEach(genobj => { context.drawImage(genobj.image, genobj.position.x, genobj.position.y) })
             //context.fillStyle = 'red'
             //context.fillRect(player.position.x, player.position.y, player.width, player.height);
-            context.drawImage(createImage(meimg), player.position.x, player.position.y)
+            context.drawImage(createImage(player.image), player.position.x, player.position.y)
             player.position.x += player.velocity.x
             if ((environment.name == 'santafe')
                 && (environment.background[0].position.y != -1164)
@@ -386,15 +384,22 @@ const Canvas = () => {
             }
             //console.log((player.position.y + player.height + player.velocity.y))
             //console.log(.2 * height)
-            if (keys.right.pressed && player.position.x < (width) - player.width) {
+            if ((keys.right.pressed && player.position.x < (width) - player.width)) {
                 player.velocity.x = 5
-                // if (meimg != meleft) {setMeimg(meleft)}
+                if (playerface != 'right') {
+                    //setplayerface('right')
+                    //setPlayer(new Player(player.position.x, player.position.y, 5, player.velocity.y, 107, 291, meright))
+                }
             }
             else if (keys.left.pressed && player.position.x > 0) {
+                console.log('uphere')
                 player.velocity.x = -5
-                // setMeimg(meright)
+                if (playerface != 'left') {
+                    console.log('here')
+                    //setplayerface('left')
+                    //setPlayer(new Player(player.position.x, player.position.y, -5, player.velocity.y, 107, 291, meleft))
+                }
             }
-
             else {
                 /*Moves platforms
                 if (keys.right.pressed) {
@@ -403,6 +408,8 @@ const Canvas = () => {
                     environment.platforms.forEach(platform => { platform.position.x += 5 })
                 }*/
                 player.velocity.x = 0
+                //setplayerface('straight')
+                //setPlayer(new Player(player.position.x, player.position.y, 0, player.velocity.y, 107, 291, me))
             }
 
 
@@ -434,7 +441,6 @@ const Canvas = () => {
                         && (!keys.down.pressed)) {
                         player.velocity.y = 0
                         if (platform.trigger && keys.g.pressed) {
-                            console.log('triggered')
                             console.log(platform.trigger())
                         }
                     }
@@ -447,7 +453,6 @@ const Canvas = () => {
                         && (!keys.down.pressed)) {
                         player.velocity.y = 0
                         if (platform.trigger && keys.g.pressed) {
-                            console.log('triggered')
                             console.log(platform.trigger())
                         }
                     }
@@ -461,7 +466,6 @@ const Canvas = () => {
                         && (!keys.down.pressed)) {
                         player.velocity.y = 0
                         if (platform.trigger && keys.g.pressed) {
-                            console.log('triggered')
                             platform.trigger()
                         }
                     }
