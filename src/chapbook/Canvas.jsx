@@ -8,6 +8,15 @@ import lab from './Images/Lab.png'
 import me from './Images/meface.png'
 import meleft from './Images/merunleft.png'
 import meright from './Images/merunright.png'
+import max1 from './Images/max1.png'
+import max2 from './Images/max2.png'
+import trent1 from './Images/trent1.png'
+import trent2 from './Images/trent2.png'
+import trentspeech from './Images/trentspeech.png'
+import max2speech from './Images/max2speech.png'
+import arnie1 from './Images/arnie1.png'
+import arnie2 from './Images/arnie2.png'
+import arniespeech from './Images/arniespeech.png'
 import metal from './Images/newmetal.jpeg'
 import intro from './Images/Intro.png'
 import bacc from './Images/baccvat.png'
@@ -110,9 +119,21 @@ const Canvas = () => {
     const classroom = new Environment({
         name: 'classroom',
         platforms: [
-            new Platform({ x: 300, y: 720, width: 445, height: 100, image: createImage(chairs), border: 'top', trigger: null }),
-            new Platform({ x: 750, y: 580, width: 445, height: 100, image: createImage(chairs), border: 'top', trigger: null }),
-            new Platform({ x: 400, y: 450, width: 445, height: 100, image: createImage(chairs), border: 'top', trigger: null }),
+            new Platform({
+                x: 300, y: 720, width: 445, height: 100, image: createImage(chairs), border: 'bottom', trigger: () => {
+                    setenv(classroommax)
+                }
+            }),
+            new Platform({
+                x: 750, y: 580, width: 445, height: 100, image: createImage(chairs), border: 'bottom', trigger: () => {
+                    setenv(classroomtrent)
+                }
+            }),
+            new Platform({
+                x: 400, y: 450, width: 445, height: 100, image: createImage(chairs), border: 'bottom', trigger: () => {
+                    setenv(classroomarnie)
+                }
+            }),
             new Platform({ x: 790, y: 165, width: 186, height: 187, image: createImage(doors), border: 'bottom', trigger: null }),
             new Platform({
                 x: 845, y: 345, width: 72, height: 72, image: createImage(greentarget), border: 'top', trigger:
@@ -126,7 +147,239 @@ const Canvas = () => {
                     }
 
             })
-        ], genobjs: [], background: [new GenericObject({ x: 0, y: 0, image: createImage(lechall) })]
+        ], genobjs: [
+            new GenericObject({
+                x: 270,
+                y: 620,
+                image: createImage(max1)
+            }),
+            new GenericObject({
+                x: 1040,
+                y: 490,
+                image: createImage(trent1)
+            }),
+            new GenericObject({
+                x: 380,
+                y: 350,
+                image: createImage(arnie1)
+            }),
+            new GenericObject({
+                x: 625,
+                y: 810,
+                image: createImage(greentarget)
+            }),
+            new GenericObject({
+                x: 727,
+                y: 540,
+                image: createImage(greentarget)
+            }),
+            new GenericObject({
+                x: 795,
+                y: 670,
+                image: createImage(greentarget)
+            })
+        ], background: [new GenericObject({ x: 0, y: 0, image: createImage(lechall) })]
+    })
+    const classroommax = new Environment({
+        name: 'classroommax',
+        platforms: [
+            new Platform({
+                x: 300, y: 720, width: 445, height: 100, image: createImage(chairs), border: 'bottom', trigger: null
+            }),
+            new Platform({
+                x: 750, y: 580, width: 445, height: 100, image: createImage(chairs), border: 'bottom', trigger: () => {
+                    setenv(classroomtrent)
+                }
+            }),
+            new Platform({
+                x: 400, y: 450, width: 445, height: 100, image: createImage(chairs), border: 'bottom', trigger: () => {
+                    setenv(classroomarnie)
+                }
+            }),
+            new Platform({ x: 790, y: 165, width: 186, height: 187, image: createImage(doors), border: 'bottom', trigger: null }),
+            new Platform({
+                x: 845, y: 345, width: 72, height: 72, image: createImage(greentarget), border: 'top', trigger:
+                    () => {
+                        keys.g.pressed = false
+                        window.open("https://docs.google.com/document/d/1T8xD6tlW2CqC0c6QnUod2aph5lYthVo3sbtq_wiDJ5k/edit?usp=sharing", "_blank")
+                        setenv(home)
+                        player.position.x = 400
+                        player.position.y = 450
+                        keys.g.pressed = false
+                    }
+
+            })
+        ], genobjs: [
+            new GenericObject({
+                x: 270,
+                y: 620,
+                image: createImage(max2)
+            }),
+            new GenericObject({
+                x: 1040,
+                y: 490,
+                image: createImage(trent1)
+            }),
+            new GenericObject({
+                x: 380,
+                y: 350,
+                image: createImage(arnie1)
+            }),
+            new GenericObject({
+                x: 250,
+                y: 440,
+                image: createImage(max2speech)
+            }),
+            new GenericObject({
+                x: 625,
+                y: 810,
+                image: createImage(greentarget)
+            }),
+            new GenericObject({
+                x: 727,
+                y: 540,
+                image: createImage(greentarget)
+            }),
+            new GenericObject({
+                x: 795,
+                y: 670,
+                image: createImage(greentarget)
+            })
+        ], background: [new GenericObject({ x: 0, y: 0, image: createImage(lechall) })]
+    })
+    const classroomtrent = new Environment({
+        name: 'classroomtrent',
+        platforms: [
+            new Platform({
+                x: 300, y: 720, width: 445, height: 100, image: createImage(chairs), border: 'bottom', trigger: () => {
+                    setenv(classroommax)
+                }
+            }),
+            new Platform({
+                x: 750, y: 580, width: 445, height: 100, image: createImage(chairs), border: 'bottom', trigger: null
+            }),
+            new Platform({
+                x: 400, y: 450, width: 445, height: 100, image: createImage(chairs), border: 'bottom', trigger: () => {
+                    setenv(classroomarnie)
+                }
+            }),
+            new Platform({ x: 790, y: 165, width: 186, height: 187, image: createImage(doors), border: 'bottom', trigger: null }),
+            new Platform({
+                x: 845, y: 345, width: 72, height: 72, image: createImage(greentarget), border: 'top', trigger:
+                    () => {
+                        keys.g.pressed = false
+                        window.open("https://docs.google.com/document/d/1T8xD6tlW2CqC0c6QnUod2aph5lYthVo3sbtq_wiDJ5k/edit?usp=sharing", "_blank")
+                        setenv(home)
+                        player.position.x = 400
+                        player.position.y = 450
+                        keys.g.pressed = false
+                    }
+
+            })
+        ], genobjs: [
+            new GenericObject({
+                x: 270,
+                y: 620,
+                image: createImage(max1)
+            }),
+            new GenericObject({
+                x: 380,
+                y: 350,
+                image: createImage(arnie1)
+            }),
+            new GenericObject({
+                x: 1040,
+                y: 490,
+                image: createImage(trent2)
+            }),
+            new GenericObject({
+                x: 1100,
+                y: 370,
+                image: createImage(trentspeech)
+            }),
+            new GenericObject({
+                x: 625,
+                y: 810,
+                image: createImage(greentarget)
+            }),
+            new GenericObject({
+                x: 727,
+                y: 540,
+                image: createImage(greentarget)
+            }),
+            new GenericObject({
+                x: 795,
+                y: 670,
+                image: createImage(greentarget)
+            })
+        ], background: [new GenericObject({ x: 0, y: 0, image: createImage(lechall) })]
+    })
+    const classroomarnie = new Environment({
+        name: 'classroomarnie',
+        platforms: [
+            new Platform({
+                x: 300, y: 720, width: 445, height: 100, image: createImage(chairs), border: 'bottom', trigger: () => {
+                    setenv(classroommax)
+                }
+            }),
+            new Platform({
+                x: 750, y: 580, width: 445, height: 100, image: createImage(chairs), border: 'bottom', trigger: () => {
+                    setenv(classroomtrent)
+                }
+            }),
+            new Platform({
+                x: 400, y: 450, width: 445, height: 100, image: createImage(chairs), border: 'bottom', trigger: null
+            }),
+            new Platform({ x: 790, y: 165, width: 186, height: 187, image: createImage(doors), border: 'bottom', trigger: null }),
+            new Platform({
+                x: 845, y: 345, width: 72, height: 72, image: createImage(greentarget), border: 'top', trigger:
+                    () => {
+                        keys.g.pressed = false
+                        window.open("https://docs.google.com/document/d/1T8xD6tlW2CqC0c6QnUod2aph5lYthVo3sbtq_wiDJ5k/edit?usp=sharing", "_blank")
+                        setenv(home)
+                        player.position.x = 400
+                        player.position.y = 450
+                        keys.g.pressed = false
+                    }
+
+            })
+        ], genobjs: [
+            new GenericObject({
+                x: 270,
+                y: 620,
+                image: createImage(max1)
+            }),
+            new GenericObject({
+                x: 1040,
+                y: 490,
+                image: createImage(trent1)
+            }),
+            new GenericObject({
+                x: 380,
+                y: 350,
+                image: createImage(arnie2)
+            }),
+            new GenericObject({
+                x: 380,
+                y: 250,
+                image: createImage(arniespeech)
+            }),
+            new GenericObject({
+                x: 625,
+                y: 810,
+                image: createImage(greentarget)
+            }),
+            new GenericObject({
+                x: 727,
+                y: 540,
+                image: createImage(greentarget)
+            }),
+            new GenericObject({
+                x: 795,
+                y: 670,
+                image: createImage(greentarget)
+            })
+        ], background: [new GenericObject({ x: 0, y: 0, image: createImage(lechall) })]
     })
     const sanfran = new Environment({
         name: 'sanfran',
@@ -276,6 +529,7 @@ const Canvas = () => {
             case "ArrowUp":
                 //console.log('up')
                 if (player.velocity.y == 0) {
+                    //setlanded(false)
                     player.velocity.y -= 10
                 }
                 keys.up.pressed = true;
@@ -345,9 +599,9 @@ const Canvas = () => {
     let [playerface, setplayerface] = useState('straight');
     let [environment, setenv] = useState(home);
     let [flying, setfly] = useState(false);
+    //let [landed, setlanded] = useState(true);
 
     let gravity = .25
-
 
     //Return this will allow the canvas element from parent component to be accessed
     const ref = useRef();
@@ -385,6 +639,7 @@ const Canvas = () => {
             }
             else {
                 player.position.y = height - player.height
+                //setlanded(true)
                 player.velocity.y = 0
             }
             if ((environment.name == 'santafe') && ((player.position.y + player.height + player.velocity.y) < .2 * height)) {
@@ -416,6 +671,7 @@ const Canvas = () => {
                 } else if (keys.left.pressed) {
                     environment.platforms.forEach(platform => { platform.position.x += 5 })
                 }*/
+                //setlanded(true)
                 player.velocity.x = 0
                 //setplayerface('straight')
                 //setPlayer(new Player(player.position.x, player.position.y, 0, player.velocity.y, 107, 291, me))
@@ -462,11 +718,6 @@ const Canvas = () => {
                         && (player.position.x + player.width >= platform.position.x)
                         && (player.position.x <= platform.position.x + platform.width)
                         && (!keys.down.pressed)) {
-                        //console.log(platform.position.x)
-                        //console.log(platform.position.y)
-                        //console.log(player.position.x)
-                        //console.log(player.position.y)
-                        //console.log(player.width)
                         player.velocity.y = 0
                         if (platform.trigger && keys.g.pressed) {
                             console.log(platform.trigger())
@@ -489,7 +740,7 @@ const Canvas = () => {
             })
 
             if (keys.k.pressed) {
-                setenv(santafe)
+                setenv(classroom)
             }
 
             if (keys.h.pressed) {
