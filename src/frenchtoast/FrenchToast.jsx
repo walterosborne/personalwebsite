@@ -42,6 +42,7 @@ function FrenchToast() {
 
   return (
     <div className="App">
+
       <Parallax pages={pages}>
 
         {/**First Text */}
@@ -51,21 +52,35 @@ function FrenchToast() {
             backgroundImage: `url(${msg})`,
             backgroundSize: 'cover'
           }} />
+        < ParallaxLayer sticky={{ start: (firsttexts - 1), end: (firsttexts - 1) }}>
+          <div className='date' style={{ position: 'absolute', top: '8vh', width: '100vw' }}>
+            <p style={{ color: 'rgb(154, 154, 154, 255)', width: 'fit-content', margin: 'auto' }} className='metextcontent'>
+              <span style={{ fontWeight: 'bold', marginRight: 3 }}>November 8, 2016</span>
+              <span> at 5:14pm </span>
+            </p>
+          </div>
+        </ParallaxLayer>
         <ParallaxLayer sticky={{ start: (firsttexts - 1), end: (pages - 5) }}
           style={{
             display: 'flex',
             top: '85vh', marginLeft: '47.5vw',
             width: '10vw', height: '10vh'
           }}> <img src={arrow} alt="" /></ParallaxLayer>
-        <ParallaxLayer sticky={{ start: firsttexts, end: (firsttexts) }} style={{ ...momtxtstyleexp, top: '8vh' }}>
+        <ParallaxLayer sticky={{ start: (firsttexts - 1), end: (firsttexts) }} style={{ top: '1vh' }} >
+
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: (firsttexts), end: (firsttexts) }} style={{ ...momtxtstyleexp, top: '11vh' }}>
           <div className='metext'><p className='metextcontent'>Hey Jay! T and I are dropping by a new Mexican place tonight that Ruth recommended - Mi Rancho. She said they have great tacos al pastor, which I know are your favorite food (even though it's neither my excellent french toast, nor even kosher). Let me know if you can make it, no pressure. Love you.</p></div>
         </ParallaxLayer>
 
         {/**Intro*/}
         <ParallaxLayer sticky={{ start: intro - 1, end: intro - 1 }} style={{ top: '2vh', height: '80vh', marginLeft: '15vw', width: '70vw', textAlign: 'center', justifyContent: 'center', display: 'flex' }}>
-          <div><h2>I click my phone off, and continue wandering the streets of Chicago’s Oak Park, trying to think of reasons not to smoke. In the hours it had taken me to, well, not think of a reason, the sun had made its way to the horizon, reaching up to paint the scattered clouds a dark blue with vermillion outline, patterning across an even oranger sky behind it.</h2>
+          <div>
+            <h1 style={{ fontFamily: "Monaco" }}>Modern Day 2027</h1>
             <br />
-            <h2>I know I shouldn’t smoke. For god’s sake, every kid knows they shouldn’t smoke. Everyone knows. I know that my lungs shouldn’t hurt when I breathe deeply. I know that my heart shouldn’t rock furiously before reaching the second flight of stairs. I know my leg shouldn’t bounce so many times a day it's a travesty my calves don’t look like Schwarzenegger’s. If these were reason enough, then 14-year-old Jay wouldn’t have lit up a second time, and I wouldn’t be spending my entire day walking these streets trying to convince myself to quit. Then again, it would be nice to exercise without needing a break. Almost, just nearly, barely, but not quite as nice as it might be to have one more smoke.</h2>
+            <h2>I click my phone off, and continue wandering the streets of Chicago’s Oak Park, trying to think of reasons not to smoke. In the hours it had taken me to not think of a reason, the sun had perched itself on the horizon to paint a calm over the scattered clouds in shades of dark blue with vermillion outline.</h2>
+            <br />
+            <h2>I know I shouldn’t smoke. For god’s sake, every kid knows they shouldn’t smoke. I know that my lungs shouldn’t hurt when I breathe deeply, and that my heart shouldn’t rock furiously before reaching the second flight of stairs. If that were reason enough, then 14-year-old Jay wouldn’t have lit up a second time, and I wouldn’t be spending my entire day walking these streets trying to convince myself to quit.</h2>
           </div>
         </ParallaxLayer>
 
@@ -76,27 +91,35 @@ function FrenchToast() {
             backgroundSize: 'cover'
           }} />
 
-        <ParallaxLayer sticky={{ start: (birds - 5), end: (birds - 1) }} style={{ ...momtxtstyle, top: '8vh' }}>
+        <ParallaxLayer sticky={{ start: (birds - 6), end: (birds - 1) }} style={{ top: '7vh' }}>
+          <div className='date' >
+            <p style={{ color: 'rgb(154, 154, 154, 255)', width: 'fit-content', margin: 'auto' }} className='metextcontent'>
+              <span style={{ fontWeight: 'bold', marginRight: 3 }}>June 20, 2018</span>
+              <span> at 9:40am </span>
+            </p>
+          </div>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: (birds - 5), end: (birds - 1) }} style={{ ...momtxtstyle, top: '10vh' }}>
           <div className='metext'><p className='metextcontent'>It hatched!</p></div>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: (birds - 4), end: (birds - 1) }} style={{ ...alignCenter, top: '20vh' }}>
+        <ParallaxLayer sticky={{ start: (birds - 4), end: (birds - 1) }} style={{ ...alignCenter, top: '22vh' }}>
           <div className='metext'><p className='metextcontent'>What</p></div>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: (birds - 3), end: (birds - 1) }} style={{ ...momtxtstyle, top: '32vh' }}>
+        <ParallaxLayer sticky={{ start: (birds - 3), end: (birds - 1) }} style={{ ...momtxtstyle, top: '34vh' }}>
           <div className='metext'><p className='metextcontent'>The hawk my guys rescued? With the broken wing and the eggs? One hatched!</p></div>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: (birds - 2.4), end: (birds - 1) }} style={{ ...alignCenter, top: '44vh' }}>
+        <ParallaxLayer sticky={{ start: (birds - 2.4), end: (birds - 1) }} style={{ ...alignCenter, top: '46vh' }}>
           <div className='metext'><p className='metextcontent'>Oh nice</p></div>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: (birds - 1.8), end: (birds - 1) }} style={{ ...momtxtstyle, top: '56vh' }}>
+        <ParallaxLayer sticky={{ start: (birds - 1.8), end: (birds - 1) }} style={{ ...momtxtstyle, top: '58vh' }}>
           <div className='metext'><p className='metextcontent'>Very nice indeed. Nicer to have a net positive weekend for the hawk population.</p></div>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: (birds - 1), end: (birds - 1) }} style={{ ...momtxtstyle, top: '68vh' }}>
+        <ParallaxLayer sticky={{ start: (birds - 1), end: (birds - 1) }} style={{ ...momtxtstyle, top: '70vh' }}>
           <div className='metext'><p className='metextcontent'>Your cousins are in town this week - will you be in the area and wanting dinner too?</p></div>
         </ParallaxLayer>
 
@@ -105,13 +128,12 @@ function FrenchToast() {
           <div><h2>My mom used to smoke. That’s probably why she croaked so early. That, or the ice cream, or the boring desk job, or the sitting around knitting
             instead of exercising. I used to think, what if I were Michael Jordan’s son? I would’ve grown up with some discipline. I mean - I figured it out,
             you know, eventually. I didn’t need a famous billionaire athlete parent to become who I am. But maybe with that head start, having self-control
-            installed instead of learned, I could’ve been even better. Sure, my mom volunteers to help birds on the weekends, but hell if I was 6'5" I could’ve
-            made the NBA myself. Yet, I’ve made the most of myself, despite her. In three hours I’ll be headlining the Laugh Factory, because I actually got off
-            my ass and made myself famous. And the people will laugh, because I put in the work to make them laugh, because I wrote the best jokes and I
-            practiced the most, but most importantly, because I had the discipline to achieve self-respect, and they can sense that when I’m on stage.
-            No matter where you are, you know, people can smell if you don’t respect yourself.</h2> <br />
+            installed instead of learned, I could’ve been even better. Sure, my mom volunteers with birds on the weekends, but hell if I was 6'5" I could’ve
+            made the NBA myself. Yet, I’ve made the most of myself, despite her. </h2><br /><h2>In three hours I’ll be headlining the Laugh Factory, because I made myself famous.
+              And the people will laugh, because I put in the work to make them laugh, because I wrote the best jokes and I
+              practiced the most, but most importantly, because I had the discipline to achieve self-respect, and they can sense that when I’m on stage.
+              No matter where you are, you know, people can smell if you don’t respect yourself.</h2> <br />
             <h2 className='next'>I swear I can still smell my mom now.
-
             </h2> <br />
             <h2 className='next'> I give in for the moment and kiss my Marlboro once more, its light rebelling against the night’s hasty descent.</h2></div>
         </ParallaxLayer>
@@ -122,6 +144,14 @@ function FrenchToast() {
             backgroundImage: `url(${msg})`,
             backgroundSize: 'cover'
           }} />
+        <ParallaxLayer sticky={{ start: (jaybird - 3), end: jaybird - 1 }} style={{ top: '7vh' }}>
+          <div className='date' >
+            <p style={{ color: 'rgb(154, 154, 154, 255)', width: 'fit-content', margin: 'auto' }} className='metextcontent'>
+              <span style={{ fontWeight: 'bold', marginRight: 3 }}>Feburary 27, 2021</span>
+              <span> at 7:36pm </span>
+            </p>
+          </div>
+        </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: (jaybird - 2), end: jaybird - 1 }} style={{ ...momtxtstyle, height: '15vh', top: '8vh' }}>
           <div className='metext'><p className='metextcontent'>Hey Jaybird. I was feeling down today, and was remembering how I used to be able to just get you a new comic book, and your elation would fix the day right up for me. Crazy what makes us happy at different points in our life, no? </p></div>
@@ -133,7 +163,11 @@ function FrenchToast() {
 
 
         <ParallaxLayer sticky={{ start: set - 2, end: set - 2 }} style={{ top: '2vh', height: '80vh', marginLeft: '15vw', width: '70vw', textAlign: 'center', justifyContent: 'center', display: 'flex' }}>
-          <div><h2>The set is going well. It really comes down to the opening joke - if that goes well, the audience is willing to ride out wherever you’re going the rest of the night. If my mom was a comedian, she would’ve cried every time she got on stage. Her eyes would be begging for the audience’s approval until they couldn’t plead anymore and released tears. I’m on such a roll I stall so I can remember the new material I want to work on. As I think, a fan calls out.</h2>
+          <div><h2>The set is going well. It really comes down to the opening joke - if that goes well, the
+            audience is willing to ride out wherever you’re going the rest of the night. If my mom was a
+            comedian, she would’ve cried every time she got on stage. Her eyes would be begging for the
+            audience’s approval just like she wants mine. I’m on such a roll I stall so I can remember the
+            new material I want to work on. As I think, a fan calls out.</h2>
             <h2>“Jayson!”</h2>
             <h2>“Yeah?”</h2>
             <h2>“Happy Birthday!”</h2>
@@ -149,8 +183,8 @@ function FrenchToast() {
         <ParallaxLayer sticky={{ start: set - 1, end: set - 1 }} style={{ top: '2vh', height: '80vh', marginLeft: '15vw', width: '70vw', textAlign: 'center', justifyContent: 'center', display: 'flex' }}>
           <div><h2>My eyes dart away from the crowd and through the stage below me. From the dirt and through the floorboards seep up live wriggling tree roots that somehow only I seem to be able to see, and they slowly slide their way up my body until they become arms, arms which wrap around my chest to hug me. The roots continue past my neck and become fingers, running themselves soothingly through my scalp. They march forward to my forehead, pass themselves as lips, and plant themselves on my forehead. </h2>
             <br /><h2>I'm on a stage, on my birthday, alone. </h2>
-            <br /><h2>But I know what I want.</h2>
-            <br /><h2>I race outside, then reach for a smoke, but I can’t, because my throat feels glued shut, and the legions of tears racing each other down my face would extinguish it anyway. While walking wherever my feet will take me, I open my phone, then messages, then for the first time today, I scroll to the bottom of the chat and start typing.</h2></div>
+            <br /><h2>But I do know what I want.</h2>
+            <br /><h2>I stammer an excuse to leave and race outside, then reach for a smoke, but I can’t because my throat feels glued shut, and the legions of tears racing each other down my face would extinguish it anyway. While walking wherever my feet will take me, I open my phone, then messages, then for the first time today, I scroll to the bottom of the chat and start typing.</h2></div>
         </ParallaxLayer>
 
 
@@ -162,27 +196,36 @@ function FrenchToast() {
             backgroundSize: 'cover'
           }} />
 
-        <ParallaxLayer sticky={{ start: (page1 - 5), end: (page1 - .5) }} style={{ ...alignCentergreen, top: '8vh' }}>
+        <ParallaxLayer sticky={{ start: (page1 - 5.9), end: ((page1 - .5)) }} style={{ top: '7vh' }}>
+          <div className='date' >
+            <p style={{ color: 'rgb(154, 154, 154, 255)', width: 'fit-content', margin: 'auto' }} className='metextcontent'>
+              <span style={{ fontWeight: 'bold', marginRight: 3 }}>May 17, 2027</span>
+              <span> at 12:18am </span>
+            </p>
+          </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer sticky={{ start: (page1 - 5), end: (page1 - .5) }} style={{ ...alignCentergreen, top: '10vh' }}>
           <div className='metext'><p className='metextcontent'>Hey ma. It's Jay.</p></div>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: (page1 - 4), end: (page1 - .5) }} style={{ ...alignCentergreen, top: '20vh' }}>
+        <ParallaxLayer sticky={{ start: (page1 - 4), end: (page1 - .5) }} style={{ ...alignCentergreen, top: '22vh' }}>
           <div className='metext'><p className='metextcontent'>How are we sure Jesus was Jewish?</p></div>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: (page1 - 3), end: (page1 - .5) }} style={{ ...alignCentergreen, top: '32vh' }}>
+        <ParallaxLayer sticky={{ start: (page1 - 3), end: (page1 - .5) }} style={{ ...alignCentergreen, top: '34vh' }}>
           <div className='metext'><p className='metextcontent'>His mother told everyone he was god.</p></div>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: (page1 - 2), end: (page1 - .5) }} style={{ ...alignCentergreen, top: '44vh' }}>
+        <ParallaxLayer sticky={{ start: (page1 - 2), end: (page1 - .5) }} style={{ ...alignCentergreen, top: '46vh' }}>
           <div className='metext'><p className='metextcontent'>You told me that one, I always loved it.</p></div>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: (page1 - 1.5), end: (page1 - .5) }} style={{ ...alignCentergreen, top: '56vh' }}>
+        <ParallaxLayer sticky={{ start: (page1 - 1.5), end: (page1 - .5) }} style={{ ...alignCentergreen, top: '58vh' }}>
           <div className='metext'><p className='metextcontent'>I wish I believed in me like you believe in me. But I don't. I'm never enough of anything, except asshole.</p></div>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: (page1 - 1), end: (page1 - .5) }} style={{ ...alignCentergreen, top: '68vh' }}>
+        <ParallaxLayer sticky={{ start: (page1 - 1), end: (page1 - .5) }} style={{ ...alignCentergreen, top: '70vh' }}>
           <div className='metext'><p className='metextcontent'>It's my birthday mom.</p></div>
         </ParallaxLayer>
 
@@ -212,8 +255,8 @@ function FrenchToast() {
           <div className='metext'><p className='metextcontent'>And IHOP’s french toast tastes like shit compared to yours.</p></div>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: (page2 - .5), end: (page2 - .5) }} style={{ ...alignCentergreen, top: '68vh' }}>
-          <div className='metext'><p className='metextcontent'>They’re a fucking mess over there at IHOP, mom, I tell you what.</p></div>
+        <ParallaxLayer sticky={{ start: (page2 - .5), end: (page2 - .5) }} style={{ ...alignCentergreen, top: '70vh' }}>
+          <div className='metext'><p className='metextcontent'>They’re a mess over there at IHOP, mom, I tell you what.</p></div>
         </ParallaxLayer>
 
         {/*PAGE3*/}
@@ -223,7 +266,7 @@ function FrenchToast() {
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: (page3 - 4), end: (page3 - .5) }} style={{ ...alignCentergreen, top: '28vh' }}>
-          <div className='metext'><p className='metextcontent'>And while this is admittedly less relevant to you, they keep changing their fucking name.</p></div>
+          <div className='metext'><p className='metextcontent'>And while this is admittedly less relevant to you, they keep changing their name.</p></div>
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: (page3 - 3), end: (page3 - .5) }} style={{ ...alignCentergreen, top: '40vh', height: '8vh' }}>
@@ -269,7 +312,7 @@ function FrenchToast() {
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: (page4 - 1), end: (page4 - 1) }} style={{ ...alignCentergreen, top: '68vh' }}>
-          <div className='metext'><p className='metextcontent'>And I’ll never see you again, and I miss you so so much mom, and I’m so so goddamn sorry.</p></div>
+          <div className='metext'><p className='metextcontent'>And I’ll never see you again, and I miss you so so much mom, and I never appreciated you and I'm so so goddamn sorry.</p></div>
         </ParallaxLayer>
 
         {/*PAGE5*/}
