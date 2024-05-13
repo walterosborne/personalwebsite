@@ -229,7 +229,7 @@ function FrenchToast() {
           <div className='metext'><p className='metextcontent'>It's my birthday mom.</p></div>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: (page1 - .5), end: (page1 - .5) }} style={{ ...alignCentergreen, top: '80vh' }}>
+        <ParallaxLayer sticky={{ start: (page1 - .5), end: (page1 - .5) }} style={{ ...alignCentergreen, top: '82vh' }}>
           <div className='metext'><p className='metextcontent'>But you know that.</p></div>
         </ParallaxLayer>
 
