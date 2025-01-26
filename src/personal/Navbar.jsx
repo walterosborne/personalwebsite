@@ -2,7 +2,7 @@ import './Navbar.css';
 import Head from './Images/Head.png';
 import Penpaper from './Images/penpaper.png';
 import Board from './Images/board.png';
-import Home from './Images/Home.png';
+import God from './Images/God.png';
 import { Link } from 'react-router-dom';
 import HomeButton from './HomeButton';
 
@@ -24,13 +24,13 @@ function Navbar() {
                 </Link>
                 <Link className='link' to="/professional">
                     <div className='item' id='prof'>
-                        <img id='penpaper' src={Board} alt="Portfolio" width='35px' />
+                        <img id='board' src={Board} alt="Clipboard" width='35px' />
                         <h2>Profes-sional</h2>
                     </div>
                 </Link>
                 <Link className='link' to="/blog">
                     <div className='item' id='prof'>
-                        <img id='penpaper' src={Board} alt="Portfolio" width='35px' />
+                        <img id='god' src={God} alt="God Himself" />
                         <h2>Opinion</h2>
                     </div>
                 </Link>
