@@ -1,25 +1,27 @@
 import React from 'react'
-import Bg from './Me.jpeg'
-import Prof from './professional.jpeg'
-import './About.css'
+import Bg from './Images/Me.png'
+import SUG from './Images/sug.png'
+import './Styles/box.css'
 import Navbar from './Navbar.jsx';
 
 function About() {
     return (
         <><Navbar />
-            <img id='bg' src={Bg} alt="Background" />
-            <div id='infocontainer'>
-                <div id='info'>
-                    <div>
-                        <img id='profimg' src={Prof} alt="" style={{ height: '24vh', width: '18vh' }} />
+            <img className='bg' src={Bg} alt="Background" />
+            <div className='outerbox'>
+                <div className='rowbox'>
+                    <img id='sug' src={SUG} alt="" />
+                    <div className='innercolbox'>
                         <h1>Hey there! </h1>
-                        <h1>Thanks for visiting my website.</h1>
+                        <h2>Thanks for visiting my website.</h2>
+                        <p>My name is Walter Osborne, and I am a proud resident of NYC. I graduated from University of Maryland's Jiménez-Porter Writer's House in July 2024,
+                            though my degree has some STEM stuff because money and stuff. I've pursued many creative outlets such as stand up comedy, acting and scriptwriting, and short fiction.
+                            Additionally, in my free time I enjoy weight lifting and running, watching tv, film, and youtube, and thinking of schemes to stretch a dollar.</p>
+
                     </div>
-                    <p>My name is Walter, and I'm a computer science major and statistics minor at the University of Maryland.
-                        I'm passionate about programming and
-                        entrepreneurship, and as such I enjoy learning new technologies and developing software to make life easy.
-                        In my free time I enjoy playing basketball with friends, creative writing, weight lifting, and watching tv and youtube.</p>
+
                 </div>
+
             </div>
         </>
     )

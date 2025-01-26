@@ -9,6 +9,15 @@
     font-weight: bold;
 }
 
+#homebtn {
+    position: fixed;
+    z-index: 1;
+    right: 5px;
+    top: 5px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
 .item {
     justify-content: center;
     padding: 10px;
@@ -16,20 +25,20 @@
     flex-direction: column;
     border-radius: 50%;
     background-color: white;
-    width: min(10vw, 20vh);
-    height: min(10vw, 20vh);
+    width: min(8vw, 18vh);
+    height: min(8vw, 18vh);
 }
 
 .link :hover {
     background-color: gainsboro;
-    width: min(11vw, 22vh);
+    width: min(9vw, 20vh);
 }
 
 #about {
     position: relative;
 }
 
-.picture {
+.item img {
     margin: 0 auto;
     max-height: 12vh;
     max-width: 4vw;
@@ -37,13 +46,25 @@
 }
 
 .link h2 {
-    font-size: min(3vw, 6vh);
+    font-size: min(2vw, 5vh);
     text-align: center;
     margin: 0 auto;
     color: black;
     pointer-events: none;
+    width: min(8vw, 18vh)
+}
+
+.link h2 :hover {
+    width: min(8vw, 18vh)
 }
 
 .link {
     text-decoration: none;
+}
+
+@media only screen and (max-width:768px) {
+    #bar {
+        position: fixed;
+        margin-left: 5px;
+    }
 }

@@ -1,50 +1,51 @@
-import React from 'react'
-import Resume from './Resume.png'
-import KO from './KO.jpeg'
-import Bg from './Graf.jpg'
-import Grant from './Grant.png'
-import Rlogo from './logo.svg'
-import './Professional.css'
+import React, { useEffect, useRef } from "react"
 import Navbar from './Navbar.jsx';
+import Resume from './Images/Resume.png'
+import KO from './Images/KO.jpeg'
+import github from './Images/github.svg'
+import Bg from './Images/strawberry.png'
+import Chapbook from './Images/chapbook.png'
+import './Styles/styles.css'
+import './Styles/box.css'
 
-function Professional() {
+const Professional = () => {
+
     return (
         <>
             <Navbar />
-            <div id='gridcont'>
-                <div id='grid'>
-                    <a className='box' id='resumebox' href="https://docs.google.com/document/d/1m-P1HZxFnLftyyt0a02XfmXnd30fiCnkbcBrS8V6yyU/edit?usp=sharing" target='_blank'>
-                        <img id='resume' src={Resume} alt="Resume" />
-                        <div className='Text'>
-                            <h2>Resume</h2>
-                            <p>See a collection of my work<br />relavant to my career aspirations</p>
+            <img className='bg' src={Bg} alt="Background" />
+            <div className='outerbox'>
+                <div className='col'>
+                    <div className='row'>
+                        <a className='colbox' href="https://docs.google.com/document/d/1m-P1HZxFnLftyyt0a02XfmXnd30fiCnkbcBrS8V6yyU/edit?usp=sharing" target='_blank' >
+                            <img src={Resume} alt="Resume" />
+                            <div className='innercolbox'>
+                                <h2>Resume</h2>
+                                <p>See a collection of my work<br />relavant to my career aspirations</p>
+                            </div>
+                        </a>
+                        <div className='colbox' >
+                            <a className='innerrowbox' href="https://github.com/walterosborne/" target='_blank'>
+                                <img id='github' className="littleimg" src={github} alt="Github Logo" />
+                                <span>
+                                    <h2>Github</h2>
+                                    <br />
+                                    <p>View the code behind my projects, including this website!</p>
+                                </span>
+                            </a>
+                            <a className='innerrowbox' href="https://play.google.com/store/apps/details?id=com.koservices.koservices2" target='_blank'>
+                                <img id='kologo' className="littleimg" src={KO} alt="App" />
+                                <span>
+                                    <h2>Android App</h2>
+                                    <br />
+                                    <p>View my published full-stack mobile app, created with Java, XML, and Firebase</p>
+                                </span>
+                            </a>
                         </div>
-                    </a>
-                    <a className='box' id='appbox' href="https://play.google.com/store/apps/details?id=com.koservices.koservices2" target='_blank'>
-                        <img id='kologo' src={KO} alt="App" />
-                        <div className='Text'>
-                            <h2>Android App</h2>
-                            <p>View my published full-stack mobile app,<br />created with Java, XML, and Firebase</p>
-                        </div>
-                    </a>
 
-                    <a className='box' id='websitebox' href='https://github.com/walterosborne/personalwebsite' target='_blank'>
-                        <img id='Rlogo' src={Rlogo} alt="React logo" />
-                        <div className='Text'>
-                            <h2>This Website</h2>
-                            <p>walterosborne.com is a React project featuring Vite, HTML,CSS, and Javascript, and is continuing to evolve!</p>
-                        </div>
-                    </a>
-                    <a className='box' id='writsampbox' href='https://docs.google.com/document/d/1nc1mmFRyLKMBNDA2M_maqeRya2hGOvKMIcPtAgSIC5k/edit?usp=sharing' target='_blank'>
-                        <img id='grant' src={Grant} alt="Writing Sample" />
-                        <div className='Text'>
-                            <h2>Writing Sample</h2>
-                            <p>Communications skills are important too - check out this proposal I wrote to increase funding to clean the Potomac River</p>
-                        </div>
-                    </a>
-                </div>
-                <img id='bg' src={Bg} alt="Background" />
-            </div>
+                    </div>
+                </div >
+            </div >
         </>
     )
 }

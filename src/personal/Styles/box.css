@@ -1,0 +1,211 @@
+/* Boxes are formatted, rows/cols are not
+Row boxes contain a row of boxes.
+Col boxes contain a column of boxes.
+Boxes are lgiht grey, inner boxes are darkey grey*/
+
+.outerbox {
+    /*Position is absolute*/
+    position: absolute;
+    /*At least 80% of the screen's height*/
+    min-height: 80vh;
+    /*Adjusts heights with size of content*/
+    height: auto;
+    /*Maintains constant width of 80*/
+    width: 80vw;
+    /*Outer box is 10% down the screen*/
+    top: 10vh;
+    /*Outer box is 15% of the screens width to the left*/
+    left: 15vw;
+    /*Centers divs inside*/
+    margin: 0 auto;
+    /*Outer box displays children in rows and columns*/
+    display: flex;
+    /* Centers child elements horizontally */
+    justify-content: center;
+    /* Centers child elements vertically */
+    align-items: center;
+}
+
+/*Keeps links black and not underlined*/
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.rowbox,
+.colbox,
+.innerrowbox,
+.innercolbox {
+    /*Position is relative to parent*/
+    position: relative;
+    /*Boxes have borders*/
+    border: 2px solid black;
+    /*Boxes have rounded corners*/
+    border-radius: 5%;
+    /*Boxes fit the height of their children*/
+    height: auto;
+    /*Boxes are 80% the width of the parent*/
+    width: 80%;
+    /*Boxes are at least 80% the height of the parent*/
+    min-height: 80%;
+    /*Centers divs inside*/
+    margin: 0 auto;
+    /*Allows for vertical/horizontal alignment*/
+    display: flex;
+    /* Centers child elements horizontally */
+    justify-content: center;
+    /* Centers child elements vertically */
+    align-items: center;
+    /*Sets gap between items*/
+    gap: 10px;
+    /*Sets padding between items and box*/
+    padding: 10px;
+    /*Center aligns the text*/
+    text-align: center;
+}
+
+.row,
+.col {
+    /*Position is relative to parent*/
+    position: relative;
+    /*Rows, which are invisble, take up entire width*/
+    width: 100%;
+    /*Centers divs inside*/
+    margin: 0 auto;
+    /*Allows for vertical/horizontal alignment*/
+    display: flex;
+    /* Centers child elements horizontally */
+    justify-content: center;
+    /* Centers child elements vertically */
+    align-items: center;
+    /*Sets gap between items*/
+    gap: 10px;
+}
+
+/*Makes outer boxes light grey*/
+.rowbox,
+.colbox {
+    background-color: gainsboro;
+}
+
+/*Makes inner boxes darker grey*/
+.innerrowbox,
+.innercolbox {
+    background-color: darkgrey;
+    height: 150px;
+}
+
+/*Makes horizontal boxes and rows horizontal*/
+.rowbox,
+.innerrowbox,
+.row {
+    flex-direction: row;
+}
+
+/*Makes vertical boxes vertical*/
+.colbox,
+.innercolbox,
+.col {
+    flex-direction: column;
+}
+
+/*Ensures text covers all of inner boxes*/
+span {
+    min-width: 65%;
+    text-align: center;
+}
+
+/*Sizes images within rows*/
+.rowbox img,
+.colbox img,
+.row img,
+.col img {
+    height: 150px;
+    /*Margin and border are included to maintain size consistency with an inner box*/
+    margin: 10px;
+    border: 2px solid;
+}
+
+/*Sizes images within inner boxes*/
+.innercolbox img,
+.innerrowbox img {
+    max-width: 75px;
+    max-height: 75px;
+    border: none;
+}
+
+#tiny {
+    display: none
+}
+
+/*Expand boxes to include all text*/
+.innerrowbox,
+.innercolbox {
+    min-height: 150px;
+    height: auto;
+}
+
+
+/*When screen is less than 768px the following occurs*/
+@media only screen and (max-width:768px) {
+
+    /*Moves outer box up and to the right*/
+    .outerbox {
+        left: initial;
+        right: 0;
+        /*Outer box is 2% down the screen*/
+        top: 10vh;
+    }
+
+    /*Text spans can now take up entire box width*/
+    span {
+        min-width: 100%;
+    }
+
+    /*Images can now take up entire box width*/
+    .rowbox img,
+    .colbox img,
+    .row img,
+    .col img {
+        max-width: 100%;
+        max-height: 50%;
+        height: auto;
+    }
+
+    /*Expand boxes to include all text*/
+    .innerrowbox,
+    .innercolbox {
+        height: auto;
+    }
+
+    /*Rows are converted to columns*/
+    .rowbox,
+    .innerrowbox,
+    .row {
+        flex-direction: column;
+    }
+
+    /*Decrease Header Size*/
+    h2 {
+        font-size: medium;
+    }
+}
+
+/*When screen is less than 768px the following occurs*/
+@media only screen and (max-width:200px) {
+    .outerbox {
+        display: none;
+    }
+
+    #tiny {
+        top: 10vh;
+        left: 30vw;
+        width: 70vw;
+        position: absolute;
+        display: flex;
+        text-align: center;
+        background-color: yellow;
+    }
+
+
+}

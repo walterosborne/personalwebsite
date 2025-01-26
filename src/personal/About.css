@@ -23,9 +23,28 @@
   margin-left: 2.5vw;
   margin-top: 5vh;
   margin-bottom: 2.5vw;
-  width: 45vw;
+  width: 40vw;
   min-height: 40vh;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+span {
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 20vw;
+  align-items: center;
+  text-align: left;
+  min-height: 100px;
+  vertical-align: middle;
+  margin: auto;
+}
+
+span h2 {
+  text-align: left;
 }
 
 @media (max-width: 800px) {

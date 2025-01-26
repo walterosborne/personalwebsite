@@ -1,12 +1,12 @@
 import './FrenchToast.css';
-
-import msg from './Message.png';
-import metxt from './metxt.png';
-import metxtgreen from './metxtgreen.png';
-import momtxt from './momtxt.png';
-import arrow from './arrow.gif';
-import nd from './nd.png';
+import msg from './images/Message.png';
+import metxt from './images/metxt.png';
+import metxtgreen from './images/metxtgreen.png';
+import momtxt from './images/momtxt.png';
+import arrow from './images/arrow.gif';
+import nd from './images/nd.png';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import HomeButton from '../personal/HomeButton';
 
 function FrenchToast() {
 
@@ -42,6 +42,7 @@ function FrenchToast() {
 
   return (
     <div className="App">
+      <HomeButton />
 
       <Parallax pages={pages}>
 
@@ -95,7 +96,7 @@ function FrenchToast() {
           <div className='date' >
             <p style={{ color: 'rgb(154, 154, 154, 255)', width: 'fit-content', margin: 'auto' }} className='metextcontent'>
               <span style={{ fontWeight: 'bold', marginRight: 3 }}>June 20, 2018</span>
-              <span> at 9:40am </span>
+              <span>at 9:40am </span>
             </p>
           </div>
         </ParallaxLayer>
