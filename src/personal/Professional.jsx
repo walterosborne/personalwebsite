@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react"
 import Navbar from './Navbar.jsx';
 import Resume from './Images/Resume.png'
-import KO from './Images/KO.jpeg'
+import KO from './Images/Lego.png'
 import github from './Images/github.svg'
 import Bg from './Images/strawberry.png'
 import Chapbook from './Images/chapbook.png'
@@ -33,12 +33,12 @@ const Professional = () => {
                                     <p>View the code behind my projects, including this website!</p>
                                 </span>
                             </a>
-                            <a className='innerrowbox' href="https://play.google.com/store/apps/details?id=com.koservices.koservices2" target='_blank'>
-                                <img id='kologo' className="littleimg" src={KO} alt="App" />
+                            <a className='innerrowbox' href="https://public.tableau.com/app/profile/walter.osborne/viz/Lego_17055400698220/LegobytheNumbers" target='_blank'>
+                                <img id='lego' className="littleimg" src={KO} alt="App" />
                                 <span>
-                                    <h2>Android App</h2>
+                                    <h2>Lego Dashboard</h2>
                                     <br />
-                                    <p>View my published full-stack mobile app, created with Java, XML, and Firebase</p>
+                                    <p>View the dashboard I created with Python and Tableau in only a few hours to win UMD's 2024 Data Visualization Contest </p>
                                 </span>
                             </a>
                         </div>
