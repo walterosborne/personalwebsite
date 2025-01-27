@@ -1,12 +1,11 @@
 import './Home.css';
 import Navbar from './Navbar.jsx';
-import Bg from './Images/Bg.png'
 
 function Home() {
     return (
         <>
             <Navbar />
-            <img className='bg' src={Bg} alt="Background" />
+            <img className='bg' src='Images/Bg.png' alt="Background" />
             <div className='outerbox'>
                 <div id="welcome" className='colbox'>
                     <h1>Welcome!</h1>

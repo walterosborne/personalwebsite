@@ -8,6 +8,8 @@ import FrenchToast from './frenchtoast/FrenchToast'
 import Chapbook from './chapbook/World.jsx'
 import Portfolio from './personal/Portfolio.jsx';
 import Default from './personal/Default.jsx';
+import Reviews from './personal/Reviews.jsx';
+import ReviewPage from './personal/ReviewPage.jsx';
 
 function App() {
     return (
@@ -22,6 +24,8 @@ function App() {
                     <Route path='/frenchtoast' exact element={<FrenchToast />} />
                     <Route path='/chapbook' exact element={<Chapbook />} />
                     <Route path='/blog' exact element={<Blog />} />
+                    <Route path='/reviews' exact element={<Reviews />} />
+                    <Route path="/review/:title" element={<ReviewPage />} />
                 </Routes>
             </Router>
 

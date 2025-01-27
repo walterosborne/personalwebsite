@@ -1,16 +1,14 @@
 import React from 'react'
-import Bg from './Images/Me.png'
-import SUG from './Images/sug.png'
 import './Styles/box.css'
 import Navbar from './Navbar.jsx';
 
 function About() {
     return (
         <><Navbar />
-            <img className='bg' src={Bg} alt="Background" />
+            <img className='bg' src='Images/Me.png' alt="Background" />
             <div className='outerbox'>
                 <div className='rowbox'>
-                    <img id='sug' src={SUG} alt="" />
+                    <img id='sug' src='Images/sug.png' alt="" />
                     <div className='innercolbox'>
                         <h1>Hey there! </h1>
                         <h2>Thanks for visiting my website.</h2>

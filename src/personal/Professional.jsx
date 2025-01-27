@@ -1,10 +1,5 @@
 import React, { useEffect, useRef } from "react"
 import Navbar from './Navbar.jsx';
-import Resume from './Images/Resume.png'
-import KO from './Images/Lego.png'
-import github from './Images/github.svg'
-import Bg from './Images/strawberry.png'
-import Chapbook from './Images/chapbook.png'
 import './Styles/styles.css'
 import './Styles/box.css'
 
@@ -13,12 +8,12 @@ const Professional = () => {
     return (
         <>
             <Navbar />
-            <img className='bg' src={Bg} alt="Background" />
+            <img className='bg' src='Images/strawberry.png' alt="Background" />
             <div className='outerbox'>
                 <div className='col'>
                     <div className='row'>
                         <a className='colbox' href="https://docs.google.com/document/d/1m-P1HZxFnLftyyt0a02XfmXnd30fiCnkbcBrS8V6yyU/edit?usp=sharing" target='_blank' >
-                            <img src={Resume} alt="Resume" />
+                            <img src='Images/Resume.png' alt="Resume" />
                             <div className='innercolbox'>
                                 <h2>Resume</h2>
                                 <p>See a collection of my work<br />relavant to my career aspirations</p>
@@ -26,7 +21,7 @@ const Professional = () => {
                         </a>
                         <div className='colbox' >
                             <a className='innerrowbox' href="https://github.com/walterosborne/" target='_blank'>
-                                <img id='github' className="littleimg" src={github} alt="Github Logo" />
+                                <img id='github' className="littleimg" src='Images/github.svg' alt="Github Logo" />
                                 <span>
                                     <h2>Github</h2>
                                     <br />
@@ -34,7 +29,7 @@ const Professional = () => {
                                 </span>
                             </a>
                             <a className='innerrowbox' href="https://public.tableau.com/app/profile/walter.osborne/viz/Lego_17055400698220/LegobytheNumbers" target='_blank'>
-                                <img id='lego' className="littleimg" src={KO} alt="App" />
+                                <img id='lego' className="littleimg" src='Lego.png' alt="App" />
                                 <span>
                                     <h2>Lego Dashboard</h2>
                                     <br />

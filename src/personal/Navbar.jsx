@@ -1,10 +1,4 @@
 import './Navbar.css';
-import Head from './Images/Head.png';
-import Penpaper from './Images/penpaper.png';
-import Board from './Images/board.png';
-import God from './Images/God.png';
-import Ig from './Images/ig.webp';
-import linkedin from './Images/linkedin.webp';
 import { Link } from 'react-router-dom';
 import HomeButton from './HomeButton';
 import { useEffect } from 'react';
@@ -31,25 +25,25 @@ function Navbar() {
             <div id='bar'>
                 <Link className='link' to="/aboutme">
                     <div className='item' id='about'>
-                        <img id='head' src={Head} alt="About Me"></img>
+                        <img id='head' src='Images/Head.png' alt="About Me"></img>
                         <h2>About Me</h2>
                     </div>
                 </Link>
                 <Link className='link' to="/portfolio">
                     <div className='item' id='prof'>
-                        <img id='penpaper' src={Penpaper} alt="Portfolio" width='35px' />
+                        <img id='penpaper' src='Images/penpaper.png' alt="Portfolio" width='35px' />
                         <h2>Content</h2>
                     </div>
                 </Link>
                 <Link className='link' to="/professional">
                     <div className='item' id='prof'>
-                        <img id='board' src={Board} alt="Clipboard" width='35px' />
+                        <img id='board' src='Images/board.png' alt="Clipboard" width='35px' />
                         <h2>Profes-sional</h2>
                     </div>
                 </Link>
                 <Link className='link' to="/blog">
                     <div className='item' id='prof'>
-                        <img id='god' src={God} alt="God Himself" />
+                        <img id='god' src='Images/God.png' alt="God Himself" />
                         <h2>Opinion</h2>
                     </div>
                 </Link>
@@ -62,10 +56,10 @@ function Navbar() {
                 <div id='social'>
                     <div className='rowbox'>
                         <a href="https://www.instagram.com/walterosborne_/" target='_blank'>
-                            <img src={Ig} alt="" />
+                            <img src='Images/ig.webp' alt="" />
                         </a>
                         <a href="https://www.linkedin.com/in/walter-osborne/" target='_blank' >
-                            <img src={linkedin} alt="" />
+                            <img src='Images/linkedin.webp' alt="" />
                         </a>
                     </div>
                 </div>

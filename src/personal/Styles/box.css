@@ -128,7 +128,7 @@ span {
 .colbox img,
 .row img,
 .col img {
-    height: 150px;
+    height: 170px;
     /*Margin and border are included to maintain size consistency with an inner box*/
     margin: 10px;
     border: 2px solid;
