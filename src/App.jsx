@@ -12,8 +12,13 @@ import Reviews from './personal/Reviews.jsx';
 import ReviewPage from './personal/ReviewPage.jsx';
 
 function App() {
+    const handleReload = () => {
+        window.location.reload(true); // 'true' forces a reload from the server
+    };
+
     return (
         <>
+
             <Router>
                 <Routes>
                     <Route path='/*' exact element={<Default />} />
