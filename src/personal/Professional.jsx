@@ -29,7 +29,7 @@ const Professional = () => {
                                 </span>
                             </a>
                             <a className='innerrowbox' href="https://public.tableau.com/app/profile/walter.osborne/viz/Lego_17055400698220/LegobytheNumbers" target='_blank'>
-                                <img id='lego' className="littleimg" src='Lego.png' alt="App" />
+                                <img id='lego' className="littleimg" src='Images/Lego.png' alt="App" />
                                 <span>
                                     <h2>Lego Dashboard</h2>
                                     <br />
