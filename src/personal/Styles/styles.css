@@ -8,14 +8,22 @@
     object-fit: cover;
 }
 
-/*The about me page has a custom sized picture and it's okay that it isn't the same size as the box because it's not a grid*/
+/*Custom sized pictures and it's okay that it isn't the same size as the box because it's not a grid*/
+/*Stand up, about me*/
 #sug {
     height: 400px;
 }
+
+
 
 /*When screen is less than 768px the following occurs*/
 @media only screen and (max-width:768px) {
     #sug {
         height: 200px;
+    }
+
+    /*Calvin and hobbes on default*/
+    #candh {
+        max-height: 200px;
     }
 }

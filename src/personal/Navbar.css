@@ -27,6 +27,7 @@
     background-color: white;
     width: min(8vw, 18vh);
     height: min(8vw, 18vh);
+    text-align: center;
 }
 
 .link :hover {
@@ -47,7 +48,6 @@
 
 .link h2 {
     font-size: min(2vw, 5vh);
-    text-align: center;
     margin: 0 auto;
     color: black;
     pointer-events: none;
@@ -62,9 +62,58 @@
     text-decoration: none;
 }
 
+#desktop {
+    /*Social bar is fixed in bottom right, and is a row. Does not usual official row class because those are intded to be used in outerbox so they are centered.*/
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    /*Puts gaps between items*/
+    gap: 5px;
+    /* Centers child elements horizontally */
+    justify-content: center;
+    /* Centers child elements vertically */
+    align-items: center;
+}
+
+/*Social images are 20 pixels tall with rounded corners, no border, and no margins to be small*/
+#social img {
+    width: 40px;
+    height: auto;
+    border: none;
+    border-radius: 5%;
+    margin: 0px;
+}
+
+
+/*Custom Sizing for view background*/
+#viewbg {
+    width: min(3vw, 6vh);
+    height: min(3vw, 6vh);
+    font-size: min(.75vw, 2vh);
+    border: 2px solid black;
+}
+
+/*Changes color of circle, which for some reason also requires height and width*/
+#viewbg:hover {
+    width: min(3vw, 6vh);
+    height: min(3vw, 6vh);
+    background-color: gainsboro;
+}
+
+
+
 @media only screen and (max-width:768px) {
+
+    /*Moves bar over*/
     #bar {
         position: fixed;
         margin-left: 5px;
+    }
+
+    /*Hides Social*/
+    #desktop {
+        display: none;
     }
 }

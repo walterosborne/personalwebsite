@@ -7,33 +7,24 @@
 }
 
 #welcome {
-  height: fit-content;
-  position: absolute;
-  width: fit-content;
-  left: 28vw;
-  top: 35vh;
   align-items: center;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
+  /*Opaque gaisboro*/
+  background-color: rgba(220, 220, 220, 0.9);
+  border: none;
 }
 
 #welcome h1 {
-  width: fit-content;
-  height: fit-content;
   font-size: 10vw;
   color: white;
-  margin: auto;
 }
 
 #welcome h2 {
-  position: relative;
-  height: fit-content;
   font-size: 2.5vw;
-  width: fit-content;
-  left: 50px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   #welcome h2 {
     left: 0;
     margin: auto;

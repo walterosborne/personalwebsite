@@ -7,12 +7,14 @@ import React from 'react'
 import FrenchToast from './frenchtoast/FrenchToast'
 import Chapbook from './chapbook/World.jsx'
 import Portfolio from './personal/Portfolio.jsx';
+import Default from './personal/Default.jsx';
 
 function App() {
     return (
         <>
             <Router>
                 <Routes>
+                    <Route path='/*' exact element={<Default />} />
                     <Route path='/' exact element={<Home />} />
                     <Route path='/aboutme' exact element={<About />} />
                     <Route path='/professional' exact element={<Professional />} />

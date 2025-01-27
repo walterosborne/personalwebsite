@@ -6,13 +6,12 @@ function Home() {
     return (
         <>
             <Navbar />
-            <div className='bg' style={{
-                backgroundImage: `url(${Bg})`,
-                backgroundSize: `cover`,
-            }} />
-            <div id="welcome">
-                <div><h1>Welcome!</h1></div>
-                <div><h2>Walter Osborne's Website</h2></div>
+            <img className='bg' src={Bg} alt="Background" />
+            <div className='outerbox'>
+                <div id="welcome" className='colbox'>
+                    <h1>Welcome!</h1>
+                    <h2>Walter Osborne's Website</h2>
+                </div>
             </div>
         </>
     );

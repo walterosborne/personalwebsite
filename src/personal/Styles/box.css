@@ -24,6 +24,14 @@ Boxes are lgiht grey, inner boxes are darkey grey*/
     justify-content: center;
     /* Centers child elements vertically */
     align-items: center;
+    /*Sets visibility so it can be removed*/
+    visibility: visible;
+}
+
+/*Defines inivible class; when activated, outerbox is made invisible*/
+.outerbox.invisible {
+    visibility: hidden;
+    display: none;
 }
 
 /*Keeps links black and not underlined*/
