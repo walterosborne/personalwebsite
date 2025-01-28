@@ -128,10 +128,56 @@ span {
 .colbox img,
 .row img,
 .col img {
-    height: 170px;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
     /*Margin and border are included to maintain size consistency with an inner box*/
     margin: 10px;
     border: 2px solid;
+}
+
+.clipper {
+    /*Position is relative to parent*/
+    position: relative;
+    /*Boxes have borders*/
+    border: 2px solid black;
+    /*Boxes have rounded corners*/
+    border-radius: 5%;
+    /*Boxes fit the height of their children*/
+    height: 10vh;
+    /*Boxes are 80% the width of the parent*/
+    width: 85%;
+    /*Centers divs inside*/
+    margin: 0 auto;
+    /*Allows for vertical/horizontal alignment*/
+    display: flex;
+    /* Centers child elements horizontally */
+    justify-content: center;
+    /* Centers child elements vertically */
+    align-items: center;
+    /*Sets gap between items*/
+    gap: 10px;
+    /*Sets padding between items and box*/
+    padding: 10px;
+    /*Center aligns the text*/
+    text-align: center;
+    background-color: rgb(29, 185, 213);
+    cursor: pointer;
+}
+
+.crown {
+    max-height: 20px;
+    max-width: 20px;
+}
+
+.rowbox iframe,
+.colbox iframe,
+.row iframe,
+.col iframe {
+    height: 40vh;
+    width: 60vw;
+    /*Margin and border are included to maintain size consistency with an inner box*/
+    margin: 10px;
 }
 
 /*Sizes images within inner boxes*/

@@ -1,27 +1,82 @@
 [
     {
-        "title": "English",
-        "desc": "A play about Iranians learning English",
-        "img": "english.jpg"
+        "id": 1,
+        "title": "Steve Martin, 1979",
+        "group": "Stand Up",
+        "desc": "Steve Martin's famous wild and crazy guy act",
+        "img": "stevearrow.jpg",
+        "lastupdated": "01/28/2025",
+        "gold": true,
+        "clips": [
+            {
+                "clip": 0,
+                "title": "That Cat",
+                "link": "https://www.youtube.com/embed/RRocmX0pF9U?si=7p1uxoEBBIeufkno&amp;start=1529"
+            },
+            {
+                "clip": 1,
+                "title": "Ballon Animals!",
+                "link": "https://www.youtube.com/embed/RRocmX0pF9U?si=7p1uxoEBBIeufkno&amp;start=2310"
+            },
+            {
+                "clip": 2,
+                "title": "King Tut",
+                "link": "https://www.youtube.com/embed/RRocmX0pF9U?si=7p1uxoEBBIeufkno&amp;start=2565"
+            }
+        ],
+        "reviewlines": [
+            "Definitely in my top three favorite stand up performances, maybe even my favorite. Steve Martin at his best! The energy and goofiness throughout is so hysterical."
+        ]
     },
     {
-        "title": "English",
-        "desc": "A play about Iranians learning English",
-        "img": "english.jpg"
+        "id": 2,
+        "title": "Nashville Skyline",
+        "group": "Music",
+        "desc": "Bob Dylan's 1969 country album",
+        "img": "nashsky.jpg",
+        "lastupdated": "01/28/2025",
+        "gold": true,
+        "clips": [
+            {
+                "clip": 0,
+                "title": "Lay Lady Lay",
+                "link": "https://www.youtube.com/embed/LhzEsb2tNbI?si=SE8j3uVlNR2dVhD1;start=0"
+            },
+            {
+                "clip": 1,
+                "title": "Tonight I'll be Staying Here with You",
+                "link": "https://www.youtube.com/embed/9ZhLGP5dF2k?si=PH4ddnlW0jmIPYHC&amp;start=0"
+            },
+            {
+                "clip": 2,
+                "title": "To Be Alone with You",
+                "link": "https://www.youtube.com/embed/3OoXZHf4R7g?si=vyIW94wTq3QbrH7Y&amp;start=0"
+            }
+        ],
+        "reviewlines": [
+            "Among my favorite albums ever made, I think hardcore Bob Dylan fans may be deterred by Bob Dylan's new voice or the lack of complicated lyrics on the album. To me, however, these are the record's strenghs - his softer voice fits the romantic themes of the album perfectly, and the lyrics are just as beautiful as any other work of Dylan's.",
+            "In fact, I'd say the verses are made more powerful because of the restraint demonstrated through not filling every second with words that sound poetic, but really just allowing the most essential, primal, and relatable emotions to exist on their own merit. I saw a post online where someone said Lay Lady Lay sounds like the way you look at someone you're in love with when they don't know you're looking, and that describes how the song feels to me perfectly.",
+            " I've included my favorite songs below, but it's really one of those albums you could listen to top to bottom without a bad moment."
+        ]
     },
     {
+        "id": 3,
         "title": "English",
+        "group": "Theater",
         "desc": "A play about Iranians learning English",
-        "img": "english.jpg"
-    },
-    {
-        "title": "English",
-        "desc": "A play about Iranians learning English",
-        "img": "english.jpg"
-    },
-    {
-        "title": "English",
-        "desc": "A play about Iranians learning English",
-        "img": "english.jpg"
+        "img": "english.jpg",
+        "lastupdated": "01/28/2025",
+        "gold": false,
+        "reviewlines": [
+            "The lighting was exceptional and created such a natural feel; I could've watched the stage rotate through a day of light and been entertained.",
+            " The execution of English being spoken with an accent and Farsi without was incredibly well done, it went just long enough without explanation to create intrigue but quick enough to prevent confusion.",
+            " The Ricky Martin scene was hilarious.",
+            " “I will fuck everyone!”",
+            " It's interesting how in a play about communication, it so often appears as a disruptive theme even beyond communication; Omid should've told Marjan he was engaged, the son should tell Roya he needs space.",
+            " I'm torn between feeling we're supposed to think Elham was a jerk for joining the class and just feeling bad for him, but I felt more so the latter; With his reasoning of feeling like a stranger in both worlds you can at least understand why he did it, and his behavior was minimally disruptive enough to feel more bad for him than assume he's a bad person.",
+            " Goli is what I imagine Zari from Duolingo is like in real life.",
+            " The actress for the Elham (Tala Ashe) was superb, being funny, relatable or impassioned as the scenes called for it.",
+            " I'd love to know what they said at the end, but I think in the spirit of its message I'll just let it be; that message being one communicating the frustration to a new language being imposed on you is ending enough for me."
+        ]
     }
 ]
