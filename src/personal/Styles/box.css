@@ -170,10 +170,7 @@ span {
     max-width: 20px;
 }
 
-.rowbox iframe,
-.colbox iframe,
-.row iframe,
-.col iframe {
+iframe {
     height: 40vh;
     width: 60vw;
     /*Margin and border are included to maintain size consistency with an inner box*/
@@ -242,6 +239,13 @@ span {
     /*Decrease Header Size*/
     h2 {
         font-size: medium;
+    }
+
+    iframe {
+        height: 40vh;
+        width: 40vw;
+        /*Margin and border are included to maintain size consistency with an inner box*/
+        margin: 10px;
     }
 }
 
