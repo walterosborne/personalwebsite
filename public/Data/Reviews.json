@@ -2,7 +2,8 @@
     {
         "id": 1,
         "title": "Steve Martin, 1979",
-        "group": "Stand Up",
+        "medium": "Stand Up",
+        "reviewtype": "Individual Piece",
         "desc": "Steve Martin's famous wild and crazy guy act",
         "img": "stevearrow.jpg",
         "lastupdated": "01/28/2025",
@@ -11,12 +12,12 @@
             {
                 "clip": 0,
                 "title": "That Cat",
-                "link": "https://www.youtube.com/embed/RRocmX0pF9U?si=7p1uxoEBBIeufkno&amp;start=1529"
+                "link": "https://www.youtube.com/embed/RRocmX0pF9U?si=7p1uxoEBBIeufkno&amp;start=1529&amp;end=1569"
             },
             {
                 "clip": 1,
                 "title": "Ballon Animals!",
-                "link": "https://www.youtube.com/embed/RRocmX0pF9U?si=7p1uxoEBBIeufkno&amp;start=2310"
+                "link": "https://www.youtube.com/embed/RRocmX0pF9U?si=7p1uxoEBBIeufkno&amp;start=2310&amp;?end=2462"
             },
             {
                 "clip": 2,
@@ -31,7 +32,8 @@
     {
         "id": 2,
         "title": "Nashville Skyline",
-        "group": "Music",
+        "medium": "Music",
+        "reviewtype": "Individual Piece",
         "desc": "Bob Dylan's 1969 country album",
         "img": "nashsky.jpg",
         "lastupdated": "01/28/2025",
@@ -62,7 +64,8 @@
     {
         "id": 3,
         "title": "English",
-        "group": "Theater",
+        "medium": "Theater",
+        "reviewtype": "Individual Piece",
         "desc": "A play about Iranians learning English",
         "img": "english.jpg",
         "lastupdated": "01/28/2025",
@@ -77,6 +80,49 @@
             " Goli is what I imagine Zari from Duolingo is like in real life.",
             " The actress for the Elham (Tala Ashe) was superb, being funny, relatable or impassioned as the scenes called for it.",
             " I'd love to know what they said at the end, but I think in the spirit of its message I'll just let it be; that message being one communicating the frustration to a new language being imposed on you is ending enough for me."
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Simpsons",
+        "medium": "Television",
+        "reviewtype": "Best of",
+        "desc": "My favorite Simpsons episodes",
+        "img": "simpsons.jpeg",
+        "lastupdated": "01/28/2025",
+        "gold": false,
+        "reviewlines": [
+            ""
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Killin' Them Softly",
+        "medium": "Stand Up",
+        "reviewtype": "Individual Piece",
+        "desc": "Dave Chappelle's 2000 DC Standup",
+        "img": "chap.jpg",
+        "lastupdated": "01/28/2025",
+        "gold": true,
+        "clips": [
+            {
+                "clip": 0,
+                "title": "Don't Bust",
+                "link": "https://www.youtube.com/embed/0qGd6KXh_ig?si=Q9T0GKhQ2ivqCBOt&amp;start=2480&amp;end=2551"
+            },
+            {
+                "clip": 1,
+                "title": "Pepe & Oscar",
+                "link": "https://www.youtube.com/embed/0qGd6KXh_ig?si=Q9T0GKhQ2ivqCBOt&amp;start=1415&amp;end=1514;"
+            },
+            {
+                "clip": 2,
+                "title": "Spread 'em",
+                "link": "https://www.youtube.com/embed/0qGd6KXh_ig?si=Q9T0GKhQ2ivqCBOt&amp;start=234&amp;end=289"
+            }
+        ],
+        "reviewlines": [
+            "For my money this is Chappelle at his finest - edgy, but really creative and without ego in doing so."
         ]
     }
 ]

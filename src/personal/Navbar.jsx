@@ -10,14 +10,24 @@ function Navbar() {
         //Gets view toggle and outerbox
         const viewbg = document.getElementById('viewbg');
         const outerbox = document.querySelector('.outerbox');
+        const scrollable = document.querySelector('.scrollable');
 
         //When mouse enters view background the outerbox invisible class is added
         viewbg.addEventListener('mouseenter', () => {
-            outerbox.classList.add('invisible');
+            if (outerbox) {
+                outerbox.classList.add('invisible');
+            }
+            if (scrollable) {
+                scrollable.classList.add('invisible');
+            }
         });
         //When mouse leaves view background the outerbox invisible class is removed
         viewbg.addEventListener('mouseleave', () => {
-            outerbox.classList.remove('invisible');
+            if (outerbox) {
+                outerbox.classList.remove('invisible');
+            } if (scrollable) {
+                scrollable.classList.remove('invisible');
+            }
         });
     })
     return (

@@ -15,7 +15,7 @@ Boxes are lgiht grey, inner boxes are darkey grey*/
     /*Outer box is 10% down the screen*/
     top: 10vh;
     /*Outer box is 15% of the screens width to the left*/
-    left: 15vw;
+    left: 13vw;
     /*Centers divs inside*/
     margin: 0 auto;
     /*Outer box displays children in rows and columns*/
@@ -28,8 +28,27 @@ Boxes are lgiht grey, inner boxes are darkey grey*/
     visibility: visible;
 }
 
+.scrollable {
+    position: absolute;
+    top: 10vh;
+    left: 13vw;
+    width: 80vw;
+    overflow-x: hidden;
+    height: 75vh;
+    /* Keep height fixed for predictable scrolling */
+    overflow-y: auto;
+    /* Enable scrolling */
+    display: block;
+    /* Switch to block layout for predictable overflow */
+    padding: 10px;
+    box-sizing: border-box;
+    visibility: visible;
+    margin: 0 0;
+}
+
 /*Defines inivible class; when activated, outerbox is made invisible*/
-.outerbox.invisible {
+.outerbox.invisible,
+.scrollable.invisible {
     visibility: hidden;
     display: none;
 }
@@ -165,10 +184,7 @@ span {
     cursor: pointer;
 }
 
-.crown {
-    max-height: 20px;
-    max-width: 20px;
-}
+
 
 iframe {
     height: 40vh;
@@ -185,6 +201,12 @@ iframe {
     border: none;
 }
 
+.innercolbox .crown {
+    max-height: 20px;
+    max-width: 20px;
+    margin: 0;
+}
+
 #tiny {
     display: none
 }
@@ -196,16 +218,21 @@ iframe {
     height: auto;
 }
 
+.col select {
+    height: 20px;
+    width: 150px;
+}
 
-/*When screen is less than 768px the following occurs*/
-@media only screen and (max-width:768px) {
+
+/*When screen is less than 850px the following occurs*/
+@media only screen and (max-width:850px) {
 
     /*Moves outer box up and to the right*/
     .outerbox {
         left: initial;
         right: 0;
         /*Outer box is 2% down the screen*/
-        top: 10vh;
+        top: 11vh;
     }
 
     /*Text spans can now take up entire box width*/
@@ -247,11 +274,18 @@ iframe {
         /*Margin and border are included to maintain size consistency with an inner box*/
         margin: 10px;
     }
+
+    .scrollable {
+        width: 90vw;
+        height: 85vh;
+    }
 }
 
 /*When screen is less than 768px the following occurs*/
 @media only screen and (max-width:200px) {
-    .outerbox {
+
+    .outerbox,
+    .scrollable {
         display: none;
     }
 

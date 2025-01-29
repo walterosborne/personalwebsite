@@ -89,10 +89,12 @@
 
 /*Custom Sizing for view background*/
 #viewbg {
+    position: relative;
     width: min(3vw, 6vh);
     height: min(3vw, 6vh);
     font-size: min(.75vw, 2vh);
     border: 2px solid black;
+    z-index: 10;
 }
 
 /*Changes color of circle, which for some reason also requires height and width*/
@@ -104,7 +106,7 @@
 
 
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:850px) {
 
     /*Moves bar over*/
     #bar {
