@@ -10,6 +10,8 @@ import Portfolio from './personal/Portfolio.jsx';
 import Default from './personal/Default.jsx';
 import Reviews from './personal/Reviews.jsx';
 import ReviewPage from './personal/ReviewPage.jsx';
+import Finance from './personal/Finance.jsx';
+import Reference from './personal/Reference.jsx';
 
 function App() {
     const handleReload = () => {
@@ -29,6 +31,8 @@ function App() {
                     <Route path='/frenchtoast' exact element={<FrenchToast />} />
                     <Route path='/chapbook' exact element={<Chapbook />} />
                     <Route path='/blog' exact element={<Blog />} />
+                    <Route path='/reference' exact element={<Reference />} />
+                    <Route path='/reference/finance' exact element={<Finance />} />
                     <Route path='/reviews' exact element={<Reviews />} />
                     <Route path="/review/:title" element={<ReviewPage />} />
                 </Routes>

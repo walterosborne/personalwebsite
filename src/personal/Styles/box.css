@@ -59,6 +59,12 @@ a {
     text-decoration: none;
 }
 
+li a,
+span a {
+    color: blue;
+    text-decoration: underline;
+}
+
 .rowbox,
 .colbox,
 .innerrowbox,

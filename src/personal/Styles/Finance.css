@@ -1,0 +1,26 @@
+#ccinfo,
+#invinfo,
+#fidinfo {
+    max-height: 50px;
+    overflow-y: hidden;
+}
+
+li:not(button) {
+    text-align: left;
+}
+
+.experienced,
+.pro {
+    display: none;
+}
+
+.experienced.show,
+.pro.show {
+    display: flex;
+}
+
+#ccinfo.fullsize,
+#fidinfo.fullsize,
+#invinfo.fullsize {
+    max-height: none;
+}
