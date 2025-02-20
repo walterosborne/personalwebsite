@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"; // Import React and hooks for state and side effects
 import Navbar from "./Navbar";
+import { Link } from 'react-router-dom';
 
 // Component to render the individual review page
 const ReviewPage = ({ }) => {
@@ -29,25 +30,42 @@ const ReviewPage = ({ }) => {
             <>
                 <Navbar />
                 <img className='bg' src={`/Images/${review.img}`} alt="Background" />
-                <div className='outerbox'>
-                    <div className="colbox">
-                        <div className="col">
-                            <h2>{review.title}</h2>
-                            {review.reviewlines.map((line) => (
-                                <p>{line}</p>
-                            ))}
-                        </div>
-                        {review.clips && <div className="innerrowbox">
-                            <iframe key={clipIndex} src={review.clips[clipIndex]['link'] + autoplay} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-
+                <Link to={"/reviews"} className="back">
+                    <img src="/Images/back.webp" alt="Go Back" className="backbtn" />
+                    <h5>Back to Reviews</h5>
+                </Link>
+                <div className='scrollable'>
+                    <div className="col" style={{ minHeight: '100%' }}>
+                        <div className="colbox">
                             <div className="col">
-                                {review.clips.map((clip) => (
-                                    <div key={clip['clip']} className="clipper" onClick={() => { setClip(clip.clip); setAutoplay('&autoplay=1'); console.log(review.clips[clipIndex]['link'] + autoplay) }}>
-                                        <h2 >{clip['title']}</h2>
-                                    </div>
+                                <h2>{review.title}</h2>
+                                {review.reviewlines.map((line) => (
+                                    /*If line is just a string, renders a paragraph*/
+                                    typeof line === "string" ? (
+                                        <p>{line}</p>
+                                    ) :
+                                        /*If not a string and the dict has a url, renders line linked to url with an a tag*/
+                                        (
+
+                                            <p>
+                                                <a href={line.url} target={line.newtab} rel="noopener noreferrer" style={{ color: 'blue', textDecoration: 'underline' }}>{line.text}</a>
+                                            </p>
+                                        )
                                 ))}
                             </div>
-                        </div>}
+                            {review.clips && <div className="innerrowbox">
+                                <iframe key={clipIndex} src={review.clips[clipIndex]['link'] + autoplay} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                                <div className="clipcontainer">
+                                    <div className="col">
+                                        {review.clips.map((clip) => (
+                                            <div key={clip['clip']} className="clipper" onClick={() => { setClip(clip.clip); setAutoplay('&autoplay=1'); console.log(review.clips[clipIndex]['link'] + autoplay) }}>
+                                                <h3 >{clip['title']}</h3>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>}
+                        </div>
                     </div>
                 </div>
             </>

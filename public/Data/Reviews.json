@@ -89,10 +89,36 @@
         "reviewtype": "Best of",
         "desc": "My favorite Simpsons episodes",
         "img": "simpsons.jpeg",
-        "lastupdated": "01/28/2025",
+        "lastupdated": "02/20/2025",
         "gold": false,
+        "clips": [
+            {
+                "clip": 0,
+                "title": "You're heaven in hush puppies (Embraceable You) S8E19",
+                "link": "https://www.youtube.com/embed/llPevkMjDHg?si=1uGbQUJahZKwNeCD"
+            },
+            {
+                "clip": 1,
+                "title": "Lisa meets Bleeding Gums S1E6",
+                "link": "https://www.youtube.com/embed/V86xXwaqPOU?si=HH7Niw9nARlXTBuL"
+            },
+            {
+                "clip": 2,
+                "title": "Grandpa, are you sitting on the pie? S8E4",
+                "link": "https://www.youtube.com/embed/YFc2uqYS11s?si=J7NmuK5cnUzWD3q2"
+            },
+            {
+                "clip": 3,
+                "title": "Lisa meets Paul McCartney S8E4",
+                "link": "https://www.youtube.com/embed/UrGvlkRysEU?si=hi46Yq4Da2mTEVtT&amp;start=98"
+            }
+        ],
         "reviewlines": [
-            ""
+            "The Simpsons are iconic, there's not much I can say about them you won't know. I do really enjoy the Simpsons, though it's not quite at gold status to me like Bojack or Family Guy. That being said, as a huge fan of cartoons, I have to tip my cap to the show as an innovator. The show does have so many evergreen episodes, and here are some of the ones I love, with clips.",
+            "S8E19 - Grade School Confidential",
+            "S3E20 - Colonel Homer",
+            "S7E5 - Lisa the vegetarian. I decided to be vegetarian immediately after watching this",
+            "Honorable mention: S7E4 - Bart Sells his soul, S5E09 - Last Temptation of Homer,S1E6 Moanin' Lisa"
         ]
     },
     {
@@ -103,7 +129,7 @@
         "desc": "Dave Chappelle's 2000 DC Standup",
         "img": "chap.jpg",
         "lastupdated": "01/28/2025",
-        "gold": true,
+        "gold": false,
         "clips": [
             {
                 "clip": 0,
@@ -123,6 +149,128 @@
         ],
         "reviewlines": [
             "For my money this is Chappelle at his finest - edgy, but really creative and without ego in doing so."
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Norm Macdonald on Talk Shows",
+        "medium": "Stand Up",
+        "reviewtype": "Best of",
+        "desc": "Norm Macdonald's best clips on Conan",
+        "img": "normconan.jpg",
+        "lastupdated": "02/16/2025",
+        "gold": true,
+        "clips": [
+            {
+                "clip": 0,
+                "title": "Bored",
+                "link": "https://www.youtube.com/embed/bKmadR4Ye54?si=CnIiRdFpMWC4Lxxp"
+            },
+            {
+                "clip": 1,
+                "title": "Life Saving Pig",
+                "link": "https://www.youtube.com/embed/vATVsdYLRT0?si=XMcz8VDGUp7ivvX8"
+            },
+            {
+                "clip": 2,
+                "title": "Doghouse",
+                "link": "https://www.youtube.com/embed/Oseqh7SMIvo?si=_mlgmDfkuCXkPS-d"
+            }
+        ],
+        "reviewlines": [
+            "Norm Macdonald on Conan is comfort food to my soul. Stand up is difficult; doing an act like Andy Kaufman, where you explore the boundaries of abstract humor is even more difficult. But Norm's style, where everyone in the audience knows the punchline well before he say it? It takes a master. In Steve Martin's Born Standing Up, he decribes one day realizing that the best laughs he's had in his life are those with friends, where the humor of a situation develops naturally; Norm is able to create this organic, friend-like laughter routinely, and paired with his quick wit and general likeability he is one of my favorite comics ever. It's hard to express how mcuch Norm's humor has helped me through times of loneliness, and I will always appreciate him for his work."
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Best of Family Guy",
+        "medium": "Television",
+        "reviewtype": "Best of",
+        "desc": "Overview of my favorite parts of Family Guy",
+        "img": "brian.jpg",
+        "lastupdated": "02/20/2025",
+        "gold": false,
+        "clips": [
+            {
+                "clip": 0,
+                "title": "Decade Song and VR with Pearl",
+                "link": "https://www.youtube.com/embed/KMiCC1MOfEQ?si=d7KZjUdJfv6BN8GE"
+            },
+            {
+                "clip": 1,
+                "title": "Earth Angel",
+                "link": "https://www.youtube.com/embed/ydJtrly7Gwo?si=tpLraS0JZod-zIkM"
+            },
+            {
+                "clip": 2,
+                "title": "Doghouse",
+                "link": "https://www.youtube.com/embed/Oseqh7SMIvo?si=_mlgmDfkuCXkPS-d"
+            }
+        ],
+        "reviewlines": [
+            "With all the 10 minute cropped youtube episodes out there (I'm at least half their views), it's easy to forget how spectacular a show Seth Macfarlane created with Family Guy. But the early seasons were hilarious and very touching at times, and while the more modern seasons still have their moments in a topical way, those from the begining had such a brilliant abstract and specifically relatable comedy that made them really unique. Blending this in occasionally with poignant moments and characters, which came from the same honesty about the world as the shows humor, yielded the best episodes which I've linked some clips of below. I'm also a huge fan of the musical segments, which have their own seperate page.",
+            {
+                "url": "8",
+                "newtab": "_self",
+                "text": "S8E17 Brian & Stewie; see my full review here"
+            },
+            {
+                "url": "9",
+                "newtab": "_self",
+                "text": "My favorite musical moments"
+            },
+            "S3E17 Brian Wallows and Peter's Swallows (see Decade Song and VR with Pearl)",
+            "S5E18 Meet The Quarmires (see Earth Angels)"
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Brian and Stewie",
+        "medium": "Television",
+        "reviewtype": "Individual Piece",
+        "desc": "My favorite Family Guy episode",
+        "img": "brianandstewie.jpg",
+        "lastupdated": "02/20/2025",
+        "gold": true,
+        "clips": [
+            {
+                "clip": 0,
+                "title": "Living without purpose",
+                "link": "https://www.youtube.com/embed/HrkYUP_LQn0?si=vm8AvWuIg-1th81c"
+            }
+        ],
+        "reviewlines": [
+            "One of my favorite TV episodes of all time, this is such a unique episode of Family Guy that has always resonated with me very deeply. I've always related strongly to Brian in the way everyone might see themselves in the Seinfeld characters - he's flawed, but in similar ways to me, and the jokes about those flaws make me laugh at myself. He's become more shallow in recent seasons, and this episode we see the edge that his character lost; through the snobbiness, self-destruction, and odd combination of pessimistic idealism, he has a great deal of appreciation for loved ones and the world, and his relationship with Stewie is a beautiful closeness that suggests that passion is perhaps its own purpose."
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Family Guy Musical Moments",
+        "medium": "Television",
+        "reviewtype": "Best of",
+        "desc": "Best Family Guy Musical Moments",
+        "img": "bagofweed.webp",
+        "lastupdated": "02/20/2025",
+        "gold": false,
+        "clips": [
+            {
+                "clip": 0,
+                "title": "Down Syndrome Girl",
+                "link": "https://www.youtube.com/embed/KreUinWX6xM?si=2HpuiYVRgt6WcoUw"
+            },
+            {
+                "clip": 1,
+                "title": "FCC Song",
+                "link": "https://www.youtube.com/embed/Pupx2VoWcmo?si=Cfur0-JmxFrC0Npc"
+            },
+            {
+                "clip": 2,
+                "title": "Bag of Weed",
+                "link": "https://www.youtube.com/embed/jK8fAUlqbow?si=5EvfeRvM7eT9tMo7"
+            }
+        ],
+        "reviewlines": [
+            "Family guy's musical segments shine in combining to show off Seth Macfarlane's tremendous writing, voice acting, and singing abilities. His voice isn't just cartoon great, Macfarlane is truly an awesome crooner; No Moon at All from his album Blue Skies is terrific, as his work in the show itself."
         ]
     }
 ]

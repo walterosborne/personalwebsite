@@ -46,6 +46,21 @@ Boxes are lgiht grey, inner boxes are darkey grey*/
     margin: 0 0;
 }
 
+.clipcontainer {
+    overflow-x: hidden;
+    height: 42vh;
+    /* Keep height fixed for predictable scrolling */
+    overflow-y: auto;
+    /* Enable scrolling */
+    display: block;
+    width: 100%;
+    /* Switch to block layout for predictable overflow */
+    padding: 10px;
+    box-sizing: border-box;
+    visibility: visible;
+    margin: 0 0;
+}
+
 /*Defines inivible class; when activated, outerbox is made invisible*/
 .outerbox.invisible,
 .scrollable.invisible {
@@ -229,6 +244,14 @@ iframe {
     width: 150px;
 }
 
+/*When screen is less than 1100px the following occurs*/
+@media only screen and (max-width:1100px) {
+
+    /*Clipper text shrinks*/
+    .clipper h3 {
+        font-size: small;
+    }
+}
 
 /*When screen is less than 850px the following occurs*/
 @media only screen and (max-width:850px) {

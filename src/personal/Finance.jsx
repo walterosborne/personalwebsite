@@ -130,7 +130,7 @@ const Finance = () => {
                                             <li>No annual fee</li>
                                             <li>Keep forever</li>
                                             <form action="https://refer.discover.com/willow30850!5043362166!a" target="_blank">
-                                                <input type="submit" value="My Referral Link" style={{ backgroundColor: 'orange' }} />
+                                                <input type="submit" value="Referral Link" style={{ backgroundColor: 'orange' }} />
                                             </form>
                                         </ul>
                                     </span>
@@ -178,7 +178,7 @@ const Finance = () => {
                                                 <li>No annual fee</li>
                                                 <li>Keep forever</li>
                                                 <form action="https://www.referyourchasecard.com/18J/A885MWUU3I" target="_blank">
-                                                    <input type="submit" value="My Referral Link" style={{ backgroundColor: 'skyblue' }} />
+                                                    <input type="submit" value="Referral Link" style={{ backgroundColor: 'skyblue' }} />
                                                 </form>
                                             </ul>
                                         </span>
@@ -219,7 +219,7 @@ const Finance = () => {
                                                 <li>No annual fee</li>
                                                 <li>Keep forever</li>
                                                 <form action="https://www.amazon.com/dp/BT00LN946S?externalReferenceId=2e82b88f-b9ff-487f-8070-83ae8c59d39d" target="_blank">
-                                                    <input type="submit" value="Link" style={{ backgroundColor: 'navy', color: 'white' }} />
+                                                    <input type="submit" value="Referral Link" style={{ backgroundColor: 'navy', color: 'white' }} />
                                                 </form>
                                             </ul>
                                         </span>

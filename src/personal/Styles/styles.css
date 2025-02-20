@@ -16,6 +16,27 @@
     height: 400px;
 }
 
+.back {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    background-color: gainsboro;
+    border: 2px solid black;
+    border-radius: 5%;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    top: 5vh;
+    left: 13vw;
+    height: 15px;
+}
+
+.backbtn {
+    height: 30px;
+    width: 30px;
+}
 
 
 /*When screen is less than 850px the following occurs*/
