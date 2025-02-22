@@ -28,7 +28,7 @@
     justify-content: center;
     align-items: center;
     z-index: 2;
-    top: 5vh;
+    top: 2vh;
     left: 13vw;
     height: 15px;
 }
@@ -49,4 +49,14 @@
     #candh {
         max-height: 200px;
     }
+
+    .backbtn {
+        height: 15px;
+        width: 15px;
+    }
+
+    .back {
+        height: 10px
+    }
+
 }
