@@ -8,7 +8,7 @@ const Professional = () => {
     return (
         <>
             <Navbar />
-            <img className='bg' src='Images/strawberry.png' alt="Background" />
+            <img className='bg' src='Images/strawberry.jpeg' alt="Background" />
             <div className='outerbox'>
                 <div className='col'>
                     <div className='row'>

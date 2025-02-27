@@ -5,7 +5,7 @@ function Home() {
     return (
         <>
             <Navbar />
-            <img className='bg' src='/Images/Bg.png' alt="Background" />
+            <img className='bg' src='/Images/Bg.jpeg' alt="Background" />
             <div className='outerbox'>
                 <div id="welcome" className='colbox'>
                     <h1>Welcome!</h1>
