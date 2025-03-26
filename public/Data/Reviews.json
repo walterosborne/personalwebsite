@@ -267,5 +267,35 @@
         "reviewlines": [
             "Family guy's musical segments shine in combining to show off Seth Macfarlane's tremendous writing, voice acting, and singing abilities. His voice isn't just cartoon great, Macfarlane is truly an awesome crooner; No Moon at All from his album Blue Skies is terrific, as his work in the show itself."
         ]
+    },
+    {
+        "id": 10,
+        "title": "Best of Woody Allen",
+        "medium": "Movies",
+        "reviewtype": "Best of",
+        "desc": "Best of Woody Allen",
+        "img": "woody.jpg",
+        "lastupdated": "03/26/2025",
+        "gold": false,
+        "clips": [
+            {
+                "clip": 0,
+                "title": "Annie Hall Spider Scene",
+                "link": "https://www.youtube.com/embed/Z-5_kcs4p2Q?si=Xy_z5oJZ21jTjvZa"
+            },
+            {
+                "clip": 1,
+                "title": "Manhattan Intro",
+                "link": "https://www.youtube.com/embed/7mwZYGcbQCo?si=UzViiE5amVO84Js8"
+            },
+            {
+                "clip": 2,
+                "title": "Golden Watch",
+                "link": "https://www.youtube.com/embed/NJZ7_fvcW58?si=kB6msyWA0o0y2MjL&amp;start=342&amp;end=372"
+            }
+        ],
+        "reviewlines": [
+            "I simultaneously wish I liked Woody Allen's work more and less, and I think that's landed me in a position where I throughly enjoy my favorites from his work, and completely disregard the rest. The first movie of his I watched was Annie Hall, and I have since loved it - it's hard to have that much New York City and Diane Keaton screen time without feeling romantic. But it's also endlessly creative in the tools it uses, from animation to perfect long shots to the conversation subtitles, and really funny throughout too. I've also seen a couple stand up clips of his, and they're definitely underrated relative to the rest of his career. But since then I've gone through a lot of his work, hoping to find more pieces that resonate with me in the same way, and just haven't found many. Not that there aren't decent films - 'Hannah and Her Sisters' and 'Match Point' were worth watching. But considering how extensive his volume of work is, not much of it has been that impactful on me personally. Additionally it's disheartening to have such a visible Jew associated with being pervy, and I'm not too keen on advocating for his work in case it promotes an association. I've linked my favorite scene from Annie Hall below, though the whole movie is great, the opening to Manhattan which I swear was like watching my own thoughts rewritten by a much better writer then read aloud, and my favorite stand up joke of his."
+        ]
     }
 ]

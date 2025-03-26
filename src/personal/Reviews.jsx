@@ -32,6 +32,15 @@ const Reviews = () => {
             .then((response) => response.json())
             //Sets reviews to the resulting data
             .then((data) => {
+                data.sort((a, b) => {
+                    const [monthA, dayA, yearA] = a.lastupdated.split("/").map(num => parseInt(num, 10));
+                    const [monthB, dayB, yearB] = b.lastupdated.split("/").map(num => parseInt(num, 10));
+
+                    const dateA = new Date(yearA, monthA - 1, dayA);
+                    const dateB = new Date(yearB, monthB - 1, dayB);
+
+                    return dateB - dateA;
+                });
                 setAllReviews(data)
                 setReviews(pair(data));
                 const mediums = ['All'].concat([...new Set(data.map(item => item.medium))])

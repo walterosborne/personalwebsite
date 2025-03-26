@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Finance Handbook",
+        "desc": "My overviews of basic finance",
+        "img": "/stevearrow.jpg",
+        "lastupdated": "03/20/2025",
+        "gold": true,
+        "link": "financehandbook"
+    },
+    {
+        "id": 2,
+        "title": "Future Card",
+        "desc": "Crazy transit benefits for a debit card",
+        "img": "/future.jpg",
+        "lastupdated": "03/26/2025",
+        "gold": false,
+        "link": "future"
+    }
+]
