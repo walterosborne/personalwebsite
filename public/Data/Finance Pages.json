@@ -16,5 +16,14 @@
         "lastupdated": "03/26/2025",
         "gold": false,
         "link": "future"
+    },
+    {
+        "id": 3,
+        "title": "Card Calculator",
+        "desc": "A tool for tracking card and bank account bonuses",
+        "img": "/CardCalc.png",
+        "lastupdated": "04/03/2025",
+        "gold": true,
+        "link": "cardcalc"
     }
 ]

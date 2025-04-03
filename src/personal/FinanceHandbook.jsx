@@ -96,7 +96,7 @@ const FinanceHandbook = () => {
                         <div className="col">
                             <h1>Walt's Finance Handbook</h1>
                             <p style={{ fontSize: 'small', fontStyle: 'italic' }}>I am not a qualified licensed investment advisor, and the following are strictly my opinions.</p>
-                            <h6>A lot of people seem interested in how I do my finances, and every time I try to refer them to resources I realize they're too complicated or assume a lot of previous knowledge. So, here's my foolproof outline of how to get the most out of your finances based on what I do.</h6>
+                            <h6>A lot of people seem interested in how I do my finances, and every time I try to refer them to resources I realize they assume a lot of previous knowledge and intimidate people. So, here's my foolproof outline of how to get the most out of your finances based on what I do.</h6>
                         </div>
                         <div className="col">
                             <h4>Mode</h4>
@@ -110,7 +110,7 @@ const FinanceHandbook = () => {
                     </div>
                     <div className="colbox">
                         <h2>Credit Cards</h2>
-                        <p id="ccinfo">Credit cards are important in building credit, and can also provide great perks to save money. Building credit is important because when you buy something like a house, you'll likely have to take out a loan, which is when the bank gives you a large sum of money and you back it back monthly over a long time with additional fees called interest. That interest fee is a percent of your payment, and with a higher credit score you can get lower percents, which means with an average priced home your credit score could save you $50-100k.
+                        <p id="ccinfo">Credit cards are important in building credit, and can also provide great perks to save money. Building credit is important because when you buy something like a house, you'll likely have to take out a loan, which is when the bank gives you a large sum of money and you back it back monthly over a long time with additional fees called interest. That interest fee is a percent of your payment, and with a higher credit score you can get lower percents, which means with an average priced home a great credit score could save you $50-100k.
                             Your credit score is based on 6 factors, which
                             opening a credit card can significantly improve the statistics of as long as you always pay your bills. It's a good idea to keep cards with no fees around forever, as they increase the age of your credit.
                         </p>

@@ -14,7 +14,7 @@ const Blog = () => {
                 <div className="row">
                     <div className="colbox">
                         <img src="/Images/stevecat.webp" alt="" />
-                        <Link className='innercolbox' to="/reviews">
+                        <Link className='innercolbox' to="/waltspicks">
                             <h2>Walt's Picks</h2>
                             <p>A collection of creative works that I love or simply found notable</p>
                         </Link>

@@ -71,6 +71,7 @@
         "lastupdated": "01/28/2025",
         "gold": false,
         "reviewlines": [
+            "I'm not going to lie, I got free tickets to this play and just want to class the site up a bit by adding theater. Anywho, afterwords I had some thoughts so I wrote them down.",
             "The lighting was exceptional and created such a natural feel; I could've watched the stage rotate through a day of light and been entertained.",
             " The execution of English being spoken with an accent and Farsi without was incredibly well done, it went just long enough without explanation to create intrigue but quick enough to prevent confusion.",
             " The Ricky Martin scene was hilarious.",
@@ -327,6 +328,38 @@
         ],
         "reviewlines": [
             "Jesse Welles is one of my favorite musicians today, and regardless of whether one agrees with him on everything his willingness to approach contemporary issues with an unapologetically opinionated approach is a boldness to be respected. That being said I do agree with most of the themes of his work, particularly pacifism and wellbeing through simplicity. On top of that he's just a damn good musician, and his guitar skills and raspy impassioned voice really stand out to me. Below are my favorites of his songs, touching on the topics of love, peace, and wellbeing."
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Django Unchained",
+        "medium": "Movies",
+        "reviewtype": "Individual Piece",
+        "desc": "My favorite movie",
+        "img": "django.jpg",
+        "lastupdated": "04/03/2025",
+        "gold": true,
+        "clips": [
+            {
+                "clip": 0,
+                "title": "He's the guy",
+                "link": "https://www.youtube.com/embed/FT72UxKVA-g?si=MK2w2hxudvSGaMGM"
+            },
+            {
+                "clip": 1,
+                "title": "Killing the Brittle brothers",
+                "link": "https://www.youtube.com/embed/BJy-omB4se8?si=lKKnimm8kHPN4qN8"
+            },
+            {
+                "clip": 2,
+                "title": "Calvin Candy's Monologue",
+                "link": "https://www.youtube.com/embed/hglyRJXCNCM?si=c7KHptT5QS6GZZ6-"
+            }
+        ],
+        "reviewlines": [
+            "I feel a little guilty Inglourious Basterds isn't my favorite Tarantino movie - the ultimate Jewish revenge fantasy on the Nazis? Christoph Waltz in one of the best performances of all time? How could it not be? But Django is just an absolute masterpiece. I've never rooted for a character harder than I have for Django, and this combined with beautiful cinematography and superb acting performances, make Django my favorite movie. First, the scene where Leonardo DiCaprio slams his hand on the table, genuinely creating a deep cut in his hand, and then continues the scene is of course iconic. On top of that the scene in which the KKK get their hoods wrong is hilarious, but my favorite two scenes are the following:",
+            "The first is when Django shows up to kill the Brittle Brothers. To start the confusion in the beginning with Django's status as a freeman excellently demonstrates the nonsensical nature of bigotry (what a pretentious way to just say the scene is funny). More seriously, Django's love for Broomhilda compelling him to beg to be whipped instead of her is moving, and her screams really sell the Brittles' cruelty. The shot where Ellis's blood is sprayed across the cotton is beautifully poetic following the previous demonstrations of their brutality, and my favorite shot in any movie. Just every little detail is perfect and accounted for - Jodie looking in the dirty mirror to see the carnage, Django kicking away the gun to make sure Rodg properly suffers for his actions with the whip, the soaring heroic music and the nervous crescendo before the whipping.",
+            "But the greatest scene of all has to be the finale. I go back and watch the scene any time I need a pick me up - he's the guy, the talk of the town! Perfect, perfect revenge. Steven throwing down his cane, the excessive, glorious violence, the song, the smoke coming through Django's sunglasses, beautiful Broomhilda's gleeful smile of pride, the horse dancing (I toppled one of the worst slave traders, I saved the love of my life, and I had time to teach more to dance doing it), and, most importantly, Django's brilliant smile with the explosion behind him - it just can't be beat."
         ]
     }
 ]

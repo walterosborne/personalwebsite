@@ -30,9 +30,9 @@ const ReviewPage = ({ }) => {
             <>
                 <Navbar />
                 <img className='bg' src={`/Images/${review.img}`} alt="Background" />
-                <Link to={"/reviews"} className="back">
+                <Link to={"/waltspicks"} className="back">
                     <img src="/Images/back.webp" alt="Go Back" className="backbtn" />
-                    <h5>Back to Reviews</h5>
+                    <h5>Back to Walt's Picks</h5>
                 </Link>
                 <div className='scrollable'>
                     <div className="col" style={{ minHeight: '100%' }}>
