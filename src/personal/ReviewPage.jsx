@@ -58,7 +58,7 @@ const ReviewPage = ({ }) => {
                                 <div className="clipcontainer">
                                     <div className="col">
                                         {review.clips.map((clip) => (
-                                            <div key={clip['clip']} className="clipper" onClick={() => { setClip(clip.clip); setAutoplay('&autoplay=1'); console.log(review.clips[clipIndex]['link'] + autoplay) }}>
+                                            <div key={clip['clip']} className="clipper" onClick={() => { setClip(clip.clip); setAutoplay('&autoplay=1'); }}>
                                                 <h3 >{clip['title']}</h3>
                                             </div>
                                         ))}

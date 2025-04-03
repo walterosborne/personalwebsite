@@ -117,7 +117,8 @@
             "The Simpsons are iconic, there's not much I can say about them you won't know. I do really enjoy the Simpsons, though it's not quite at gold status to me like Bojack or Family Guy. That being said, as a huge fan of cartoons, I have to tip my cap to the show as an innovator. The show does have so many evergreen episodes, and here are some of the ones I love, with clips.",
             "S8E19 - Grade School Confidential",
             "S3E20 - Colonel Homer",
-            "S7E5 - Lisa the vegetarian. I decided to be vegetarian immediately after watching this",
+            "S10E6 - D'oh-in' in the Wind",
+            "S7E5 - Lisa the vegetarian",
             "Honorable mention: S7E4 - Bart Sells his soul, S5E09 - Last Temptation of Homer,S1E6 Moanin' Lisa"
         ]
     },
@@ -296,6 +297,36 @@
         ],
         "reviewlines": [
             "I simultaneously wish I liked Woody Allen's work more and less, and I think that's landed me in a position where I throughly enjoy my favorites from his work, and completely disregard the rest. The first movie of his I watched was Annie Hall, and I have since loved it - it's hard to have that much New York City and Diane Keaton screen time without feeling romantic. But it's also endlessly creative in the tools it uses, from animation to perfect long shots to the conversation subtitles, and really funny throughout too. I've also seen a couple stand up clips of his, and they're definitely underrated relative to the rest of his career. But since then I've gone through a lot of his work, hoping to find more pieces that resonate with me in the same way, and just haven't found many. Not that there aren't decent films - 'Hannah and Her Sisters' and 'Match Point' were worth watching. But considering how extensive his volume of work is, not much of it has been that impactful on me personally. Additionally it's disheartening to have such a visible Jew associated with being pervy, and I'm not too keen on advocating for his work in case it promotes an association. I've linked my favorite scene from Annie Hall below, though the whole movie is great, the opening to Manhattan which I swear was like watching my own thoughts rewritten by a much better writer then read aloud, and my favorite stand up joke of his."
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Best of Jesse Welles",
+        "medium": "Music",
+        "reviewtype": "Best of",
+        "desc": "Best of Jesse Welles",
+        "img": "jesse.jpg",
+        "lastupdated": "04/03/2025",
+        "gold": false,
+        "clips": [
+            {
+                "clip": 0,
+                "title": "Why Don't You Love Me",
+                "link": "https://www.youtube.com/embed/JhLnsriF4T0?si=RDI3bzM5c2_xy7yp"
+            },
+            {
+                "clip": 1,
+                "title": "War is a God",
+                "link": "https://www.youtube.com/embed/W6x125_JCvc?si=Ehx2xkqj_mAPzthC"
+            },
+            {
+                "clip": 2,
+                "title": "Vape",
+                "link": "https://www.youtube.com/embed/K3Kupv4Lxgo?si=jp8B0xLYAiHItWGF"
+            }
+        ],
+        "reviewlines": [
+            "Jesse Welles is one of my favorite musicians today, and regardless of whether one agrees with him on everything his willingness to approach contemporary issues with an unapologetically opinionated approach is a boldness to be respected. That being said I do agree with most of the themes of his work, particularly pacifism and wellbeing through simplicity. On top of that he's just a damn good musician, and his guitar skills and raspy impassioned voice really stand out to me. Below are my favorites of his songs, touching on the topics of love, peace, and wellbeing."
         ]
     }
 ]

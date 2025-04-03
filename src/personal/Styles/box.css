@@ -309,7 +309,7 @@ iframe {
 
     iframe {
         height: 40vh;
-        width: 40vw;
+        width: 100%;
         /*Margin and border are included to maintain size consistency with an inner box*/
         margin: 10px;
     }
